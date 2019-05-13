@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Hour_Type__c</fullName>
+    <description>Service hour type: direct and indirect.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select service hour type: direct for community/volunteer related hours, and indirect for meetings, training, etc.</inlineHelpText>
+    <label>Service Hour Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct Service Hours</fullName>
+                <default>false</default>
+                <label>Direct Service Hours</label>
+            </value>
+            <value>
+                <fullName>Indirect Service Hours</fullName>
+                <default>false</default>
+                <label>Indirect Service Hours</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

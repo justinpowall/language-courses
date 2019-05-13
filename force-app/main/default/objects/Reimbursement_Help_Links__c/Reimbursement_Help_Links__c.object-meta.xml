@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Maps the Program to the desired Reimbursement Help Document</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Reimbursement Help Links</label>
+    <visibility>Public</visibility>
+</CustomObject>

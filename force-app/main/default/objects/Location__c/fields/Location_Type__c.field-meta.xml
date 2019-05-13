@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_Type__c</fullName>
+    <description>Captures the location type of a particular location.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the location type that best describes this location.</inlineHelpText>
+    <label>Location Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AARP Chapter</fullName>
+                <default>false</default>
+                <label>AARP Chapter</label>
+            </value>
+            <value>
+                <fullName>Bank/Credit Union</fullName>
+                <default>false</default>
+                <label>Bank/Credit Union</label>
+            </value>
+            <value>
+                <fullName>City/County Government/Chamber of Commerce</fullName>
+                <default>false</default>
+                <label>City/County Government/Chamber of Commerce</label>
+            </value>
+            <value>
+                <fullName>Elks/Kiwanis/Lions/Moose/Rotary Club</fullName>
+                <default>false</default>
+                <label>Elks/Kiwanis/Lions/Moose/Rotary Club</label>
+            </value>
+            <value>
+                <fullName>Funeral Home</fullName>
+                <default>false</default>
+                <label>Funeral Home</label>
+            </value>
+            <value>
+                <fullName>Hospital/HMO/Physician&#39;s Office</fullName>
+                <default>false</default>
+                <label>Hospital/HMO/Physician&#39;s Office</label>
+            </value>
+            <value>
+                <fullName>Library</fullName>
+                <default>false</default>
+                <label>Library</label>
+            </value>
+            <value>
+                <fullName>Local Business</fullName>
+                <default>false</default>
+                <label>Local Business</label>
+            </value>
+            <value>
+                <fullName>Local Insurance Agent</fullName>
+                <default>false</default>
+                <label>Local Insurance Agent</label>
+            </value>
+            <value>
+                <fullName>Military/Veteran Organization</fullName>
+                <default>false</default>
+                <label>Military/Veteran Organization</label>
+            </value>
+            <value>
+                <fullName>Park/Recreation or Community Center</fullName>
+                <default>false</default>
+                <label>Park/Recreation or Community Center</label>
+            </value>
+            <value>
+                <fullName>Place of Worship</fullName>
+                <default>false</default>
+                <label>Place of Worship</label>
+            </value>
+            <value>
+                <fullName>Police/Sheriff/Fire/EMS</fullName>
+                <default>false</default>
+                <label>Police/Sheriff/Fire/EMS</label>
+            </value>
+            <value>
+                <fullName>Red Cross</fullName>
+                <default>false</default>
+                <label>Red Cross</label>
+            </value>
+            <value>
+                <fullName>Retired Teachers Association</fullName>
+                <default>false</default>
+                <label>Retired Teachers Association</label>
+            </value>
+            <value>
+                <fullName>RV/Mobile Home Park</fullName>
+                <default>false</default>
+                <label>RV/Mobile Home Park</label>
+            </value>
+            <value>
+                <fullName>Salvation Army</fullName>
+                <default>false</default>
+                <label>Salvation Army</label>
+            </value>
+            <value>
+                <fullName>School/Educational Institution</fullName>
+                <default>false</default>
+                <label>School/Educational Institution</label>
+            </value>
+            <value>
+                <fullName>Senior Center</fullName>
+                <default>false</default>
+                <label>Senior Center</label>
+            </value>
+            <value>
+                <fullName>YMCA/YWCA</fullName>
+                <default>false</default>
+                <label>YMCA/YWCA</label>
+            </value>
+            <value>
+                <fullName>Residential/Retirement Community</fullName>
+                <default>false</default>
+                <label>Residential/Retirement Community</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

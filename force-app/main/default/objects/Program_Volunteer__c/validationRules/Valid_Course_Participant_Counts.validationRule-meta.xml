@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid_Course_Participant_Counts</fullName>
+    <active>true</active>
+    <description>Course and Participant Counts cannot be negative.</description>
+    <errorConditionFormula>OR( VMIS_Course_Count__c &lt; 0,  VMIS_Participant_Count__c &lt; 0,  VTM_Course_Count__c &lt; 0,  VTM_Participant_Count__c &lt; 0)</errorConditionFormula>
+    <errorMessage>VTM/VMIS Course and Participant Counts cannot be negative.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sample_Candidate_View</fullName>
+    <columns>NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>Volunteer_ID__c</columns>
+    <columns>Status__c</columns>
+    <columns>Position__c</columns>
+    <columns>Is_Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Candidate,Submitted</value>
+    </filters>
+    <filters>
+        <field>Position__c</field>
+        <operation>startsWith</operation>
+        <value>TA</value>
+    </filters>
+    <filters>
+        <field>Is_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>AARP.org</value>
+    </filters>
+    <label>Sample Candidate View</label>
+</ListView>

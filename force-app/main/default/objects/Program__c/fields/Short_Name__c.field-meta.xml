@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Short_Name__c</fullName>
+    <description>A short name for this program record that describes its place in the program hierarchy.  Is used to tag orders within RRD CustomPoint and to enable &quot;Team Sharing&quot; visibility within CustomPoint.</description>
+    <externalId>false</externalId>
+    <label>Short Name</label>
+    <length>25</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

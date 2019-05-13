@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Link to the enterprise level program this event is related to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enterprise level program this event is related to.</inlineHelpText>
+    <label>Program</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Program must be an enterprise-level program.</errorMessage>
+        <filterItems>
+            <field>Program__c.Enterprise_Level_Program__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Program__c</referenceTo>
+    <relationshipLabel>Event Templates</relationshipLabel>
+    <relationshipName>Event_Templates</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

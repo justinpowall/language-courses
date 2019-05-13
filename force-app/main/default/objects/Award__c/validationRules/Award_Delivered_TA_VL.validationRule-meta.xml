@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Award_Delivered_TA_VL</fullName>
+    <active>true</active>
+    <description>Award Delivered on non-Tax-Aide awards cannot be updated by Tax-Aide Volunteer Leader users</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(Award_Delivered__c),
+Program__c &lt;&gt; &quot;Tax-Aide&quot;,
+$Profile.Name = &quot;Tax-Aide Volunteer Leader - LMS Admin&quot;
+)</errorConditionFormula>
+    <errorMessage>Award Delivered cannot be modified because this award does not apply to Tax-Aide</errorMessage>
+</ValidationRule>

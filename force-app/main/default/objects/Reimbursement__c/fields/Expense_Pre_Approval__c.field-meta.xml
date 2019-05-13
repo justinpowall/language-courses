@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Pre_Approval__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Pre-Approved expenses for reimbursement requests that require prior authorization.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Pre-Approved expenses for reimbursement requests that require prior authorization.
+Only search for and select pre-approvals that have been approved</inlineHelpText>
+    <label>Expense Pre-Approval</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Reimbursement__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Expense Pre-Approval</value>
+        </filterItems>
+        <filterItems>
+            <field>Reimbursement__c.Assignment__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Assignment__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Reimbursement__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Approved by Program</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Reimbursement__c</referenceTo>
+    <relationshipLabel>Expense Pre-Approvals</relationshipLabel>
+    <relationshipName>Reimbursements</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

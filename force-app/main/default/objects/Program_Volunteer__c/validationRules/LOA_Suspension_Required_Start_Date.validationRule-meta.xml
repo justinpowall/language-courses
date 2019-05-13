@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LOA_Suspension_Required_Start_Date</fullName>
+    <active>true</active>
+    <description>LOA/Suspension Start Date required if Assignment Ended Reason = Leave of Absence or Suspension</description>
+    <errorConditionFormula>AND(ISBLANK( LOA_Suspension_Start_Date__c ), 
+OR(ISPICKVAL( Assignment_Ended_Reason__c , &#39;Leave of Absence&#39;),
+  ISPICKVAL( Assignment_Ended_Reason__c , &#39;Suspended&#39;)))</errorConditionFormula>
+    <errorDisplayField>LOA_Suspension_Start_Date__c</errorDisplayField>
+    <errorMessage>A LOA/Suspension Start Date is required when Assignment Ended Reason is Leave of Absence or Suspended.</errorMessage>
+</ValidationRule>

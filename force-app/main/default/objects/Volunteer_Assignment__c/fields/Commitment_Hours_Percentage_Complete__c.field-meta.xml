@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commitment_Hours_Percentage_Complete__c</fullName>
+    <description>Percentage of commitment hours goal completed.</description>
+    <externalId>false</externalId>
+    <formula>Total_Hours__c /  Position__r.Commitment_Hours_Goal__c</formula>
+    <inlineHelpText>Percentage of commitment hours goal completed.</inlineHelpText>
+    <label>Commitment Hours Percentage Complete</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

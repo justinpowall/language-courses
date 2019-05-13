@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Courses_Taught__c</fullName>
+    <externalId>false</externalId>
+    <label>Courses Taught</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Milestone_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>100</fullName>
+                <default>false</default>
+                <label>100</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <label>200</label>
+            </value>
+            <value>
+                <fullName>300</fullName>
+                <default>false</default>
+                <label>300</label>
+            </value>
+            <value>
+                <fullName>400</fullName>
+                <default>false</default>
+                <label>400</label>
+            </value>
+            <value>
+                <fullName>500</fullName>
+                <default>false</default>
+                <label>500</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Courses Taught</controllingFieldValue>
+            <valueName>100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Courses Taught</controllingFieldValue>
+            <valueName>200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Courses Taught</controllingFieldValue>
+            <valueName>300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Courses Taught</controllingFieldValue>
+            <valueName>400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Courses Taught</controllingFieldValue>
+            <valueName>500</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

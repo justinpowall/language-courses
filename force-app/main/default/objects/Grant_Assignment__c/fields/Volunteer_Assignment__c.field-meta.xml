@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volunteer_Assignment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is a lookup relationship to the Volunteer_Assignment object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to associate a volunteer assignment to grant contact.</inlineHelpText>
+    <label>Volunteer Assignment</label>
+    <referenceTo>Volunteer_Assignment__c</referenceTo>
+    <relationshipLabel>Grant Assignments</relationshipLabel>
+    <relationshipName>Grant_Assignments</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

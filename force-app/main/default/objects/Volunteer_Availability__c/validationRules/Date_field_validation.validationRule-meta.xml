@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_field_validation</fullName>
+    <active>false</active>
+    <description>Start time and End time date field must equal Date field.</description>
+    <errorConditionFormula>OR(
+Date__c &lt;&gt; DATEVALUE(Start_Time__c),
+(Date__c  &lt;&gt; DATEVALUE(End_Time__c))
+)</errorConditionFormula>
+    <errorMessage>Start time and End time date field must equal Date field.</errorMessage>
+</ValidationRule>

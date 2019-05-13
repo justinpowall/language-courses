@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volunteer_Hours_Driver_Safety__c</fullName>
+    <description>How many volunteer hours did this chapter contribute this year to AARP&#39;s Driver Safety program?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many volunteer hours did this chapter contribute this year to AARP&#39;s Driver Safety program?</inlineHelpText>
+    <label>Volunteer Hours: Driver Safety</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

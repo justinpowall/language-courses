@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hours_Must_be_in_15_Minute_Increments</fullName>
+    <active>true</active>
+    <description>Time must be entered in multiples of .25 (15 minutes).</description>
+    <errorConditionFormula>OR( 
+OR(Sunday__c &gt;24, 
+Sunday__c &lt;0,
+MOD( Sunday__c , 0.25) &lt;&gt;0), 
+OR(Monday__c &gt;24, 
+Monday__c &lt;0,
+MOD( Monday__c , 0.25) &lt;&gt;0), 
+OR( Tuesday__c &gt;24, 
+Tuesday__c &lt;0,
+MOD( Tuesday__c , 0.25) &lt;&gt;0), 
+OR( Wednesday__c &gt;24, 
+Wednesday__c &lt;0,
+MOD( Wednesday__c , 0.25) &lt;&gt;0), 
+OR( Thursday__c &gt;24, 
+Thursday__c &lt;0,
+MOD( Thursday__c , 0.25) &lt;&gt;0), 
+OR( Friday__c &gt;24, 
+Friday__c &lt;0,
+MOD( Friday__c , 0.25) &lt;&gt;0), 
+OR( Saturday__c &gt;24, 
+Saturday__c &lt;0,
+MOD( Saturday__c , 0.25) &lt;&gt;0) 
+)</errorConditionFormula>
+    <errorMessage>Time must be entered in 15 minute intervals ( multiples of .25),cannot exceed 24 hours, and cannot be less than 0.</errorMessage>
+</ValidationRule>

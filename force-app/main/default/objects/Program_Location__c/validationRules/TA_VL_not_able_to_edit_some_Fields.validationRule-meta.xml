@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TA_VL_not_able_to_edit_some_Fields</fullName>
+    <active>true</active>
+    <description>Tax Aide VL-RO are prevented from editing Program Location Name and Program Fields</description>
+    <errorConditionFormula>AND(
+  CONTAINS($Profile.Name, &quot;Tax-Aide Volunteer Leader&quot;),  
+ OR(  
+ ISCHANGED(Name), 
+ ISCHANGED(Program__c))
+)</errorConditionFormula>
+    <errorMessage>You have insufficient privileges to edit Program Location Name and Program Fields. Please contact your supervisor.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Used to compare the Funding Code&#39;s PeopleSoft Project Business Code to the Position&#39;s Department Code&#39;s PeopleSoft Business Unit Code.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>PeopleSoft Funding Accounting Code Rules</label>
+    <visibility>Public</visibility>
+</CustomObject>

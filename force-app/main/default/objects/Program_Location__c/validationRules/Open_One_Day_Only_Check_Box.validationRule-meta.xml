@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_One_Day_Only_Check_Box</fullName>
+    <active>true</active>
+    <description>Validation rule to fire when Open/Close dates have not been open when box is checked.</description>
+    <errorConditionFormula>AND(
+  Open_One_Day_Only__c = TRUE,
+  OR(
+     NOT(ISCHANGED( Open_Date__c )),
+     NOT(ISCHANGED( Close_Date__c )),
+ Open_Date__c   &lt;&gt;  Close_Date__c 
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Open_One_Day_Only__c</errorDisplayField>
+    <errorMessage>Open and Close dates must be updated to proceed.</errorMessage>
+</ValidationRule>

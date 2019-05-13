@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technology_Available__c</fullName>
+    <description>Captures technology available at a location.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the technology that AARP has access to at this location. If multiple technologies are available, select all that apply (you can select multiple values at once by holding down CTRL as you select each value).</inlineHelpText>
+    <label>Technology Available</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Computer (Single)</fullName>
+                <default>false</default>
+                <label>Computer (Single)</label>
+            </value>
+            <value>
+                <fullName>Computer Room</fullName>
+                <default>false</default>
+                <label>Computer Room</label>
+            </value>
+            <value>
+                <fullName>Internet Access</fullName>
+                <default>false</default>
+                <label>Internet Access</label>
+            </value>
+            <value>
+                <fullName>Printer</fullName>
+                <default>false</default>
+                <label>Printer</label>
+            </value>
+            <value>
+                <fullName>Projector</fullName>
+                <default>false</default>
+                <label>Projector</label>
+            </value>
+            <value>
+                <fullName>TV/DVD Player</fullName>
+                <default>false</default>
+                <label>TV/DVD Player</label>
+            </value>
+            <value>
+                <fullName>TV/VCR</fullName>
+                <default>false</default>
+                <label>TV/VCR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Pre_Approval_TA_Donated_Fund_Reimbursement</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Expense Pre-Approval: TA Donated Fund</label>
+    <queue>Expense_Pre_Approval_TA_Donated_Fund</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

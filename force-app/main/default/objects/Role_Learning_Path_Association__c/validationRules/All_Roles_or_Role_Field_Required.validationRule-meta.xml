@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Roles_or_Role_Field_Required</fullName>
+    <active>true</active>
+    <description>Either all roles or role field is required, but both fields cannot have values or simultaneously be blank.</description>
+    <errorConditionFormula>OR(
+AND(
+ All_Roles__c = TRUE,
+ NOT(ISBLANK(Role__r.Name))),
+AND( 
+ All_Roles__c = FALSE,
+ ISBLANK(Role__r.Name))
+)</errorConditionFormula>
+    <errorMessage>Either select a Role to which learning path is assigned, or check All Roles so learning path is assigned to all roles in the identified region.  Both fields cannot have values or be simultaneously blank.</errorMessage>
+</ValidationRule>

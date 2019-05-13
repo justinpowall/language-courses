@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Reimbursement</fullName>
+    <active>true</active>
+    <description>Actual expense request submitted in order to receive reimbursement payment.</description>
+    <label>Expense Reimbursement</label>
+    <picklistValues>
+        <picklist>Reimbursement_Type__c</picklist>
+        <values>
+            <fullName>Flat Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Itemized</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved by Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Further Action Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Submitted</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pending Finance Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled for Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Verification_Statement__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

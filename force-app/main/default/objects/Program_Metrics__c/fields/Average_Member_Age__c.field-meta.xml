@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Average_Member_Age__c</fullName>
+    <description>Enter Average age range of Chapter Members.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter Average age range of Chapter Members.</inlineHelpText>
+    <label>Average Member Age</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>55-65</fullName>
+                <default>false</default>
+                <label>55-65</label>
+            </value>
+            <value>
+                <fullName>66-75</fullName>
+                <default>false</default>
+                <label>66-75</label>
+            </value>
+            <value>
+                <fullName>76+</fullName>
+                <default>false</default>
+                <label>76+</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

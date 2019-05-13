@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Approvals_for_Foundation</fullName>
+    <active>true</active>
+    <description>0 levels of approval can only be selected for Foundation positions.</description>
+    <errorConditionFormula>AND(
+CONTAINS(Program__r.Branding_Descriptor__c, &quot;Foundation&quot;), 
+ISPICKVAL(Time_Approval_Required__c , &quot;Yes - 1 Level of Approval Required&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>Time_Approval_Required__c</errorDisplayField>
+    <errorMessage>0 levels of approval can only be selected for Foundation positions.</errorMessage>
+</ValidationRule>

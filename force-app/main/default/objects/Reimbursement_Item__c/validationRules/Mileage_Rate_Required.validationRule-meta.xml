@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mileage_Rate_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+  AND(
+    NOT(ISBLANK(Miles__c)),
+    ISBLANK(Mileage_Rate__c)
+  ),
+  AND(
+    NOT(ISBLANK(Mileage_Rate__c)),
+    ISBLANK(Miles__c)
+  )
+)</errorConditionFormula>
+    <errorMessage>A mileage line item cannot be saved unless the mileage distance is specified as well as the mileage rate.</errorMessage>
+</ValidationRule>

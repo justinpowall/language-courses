@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_One_Day_Only__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Captures if the location is open only one day a year for Tax-Aide.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check the box if this location is open only one day a year.</inlineHelpText>
+    <label>Open One Day Only</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

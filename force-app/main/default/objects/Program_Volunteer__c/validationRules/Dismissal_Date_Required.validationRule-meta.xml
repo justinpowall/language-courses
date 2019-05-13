@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dismissal_Date_Required</fullName>
+    <active>true</active>
+    <description>Dismissal Date required when Assignment Ended Reason = Dismissed.</description>
+    <errorConditionFormula>AND(  
+    ISPICKVAL(Assignment_Ended_Reason__c, &quot;Dismissed&quot;),
+    ISNULL(Dismissal_Date__c ))</errorConditionFormula>
+    <errorMessage>Dismissal Date is required if Assignment Ended Reason = Dismissed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADP_File_Number_Required</fullName>
+    <active>false</active>
+    <description>If ADP file number is blank then Pay Monthly Stipend cannot be checked</description>
+    <errorConditionFormula>AND
+(ISBLANK(Contact__r.ADP_File_Number__c), 
+(Pay_Monthly_Stipend__c = True))</errorConditionFormula>
+    <errorDisplayField>Pay_Monthly_Stipend__c</errorDisplayField>
+    <errorMessage>In order to pay a volunteer his/her stipend, the volunteer must have an ADP File Number on his/her contact record.</errorMessage>
+</ValidationRule>

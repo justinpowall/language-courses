@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commitment_Met__c</fullName>
+    <description>Evaluates true if number of Stipend Eligible Hours is greater than the Grant Contact&#39;s Weekly Hour Commitment times weeks in that month</description>
+    <externalId>false</externalId>
+    <formula>Stipend_Eligible__c &gt;=  
+ Grant_Contact__r.Grant__r.Monthly_Hour_Commitment__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Commitment Met</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

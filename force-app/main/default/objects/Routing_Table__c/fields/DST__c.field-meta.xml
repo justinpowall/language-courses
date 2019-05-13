@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DST__c</fullName>
+    <description>Identifies if the given zip code observes Daylight Savings Time (1=Yes, 0=No)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Identifies if the given zip code observes Daylight Savings Time (1=Yes, 0=No).</inlineHelpText>
+    <label>DST</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDTEK_Events_to_Launch</fullName>
+    <columns>NAME</columns>
+    <columns>Event_Title__c</columns>
+    <columns>Cvent_Event_Status__c</columns>
+    <columns>Event_Template__c</columns>
+    <columns>Event_Start_Date__c</columns>
+    <columns>Host_Location__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Event_Title__c</field>
+        <operation>startsWith</operation>
+        <value>aarp smart driver</value>
+    </filters>
+    <filters>
+        <field>Cvent_Event_Status__c</field>
+        <operation>equals</operation>
+        <value>pending</value>
+    </filters>
+    <label>SDTEK Events to Launch</label>
+    <sharedTo>
+        <group>Driver_Safety_Staff</group>
+        <group>Driver_Safety_Volunteer_Leaders</group>
+        <group>Driver_Safety_Volunteer_Portal_Users</group>
+        <group>Driver_Safety_Volunteers</group>
+    </sharedTo>
+</ListView>

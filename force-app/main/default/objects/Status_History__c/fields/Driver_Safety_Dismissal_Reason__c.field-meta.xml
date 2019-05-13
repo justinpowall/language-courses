@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Driver_Safety_Dismissal_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Driver Safety Dismissal Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Violation of AARP Volunteer Policies</fullName>
+                <default>false</default>
+                <label>Violation of AARP Volunteer Policies</label>
+            </value>
+            <value>
+                <fullName>Violation of Program Volunteer Policies</fullName>
+                <default>false</default>
+                <label>Violation of Program Volunteer Policies</label>
+            </value>
+            <value>
+                <fullName>Engaging Publicly in Partisan Activity</fullName>
+                <default>false</default>
+                <label>Engaging Publicly in Partisan Activity</label>
+            </value>
+            <value>
+                <fullName>Difference of Opinion on AARP Policies</fullName>
+                <default>false</default>
+                <label>Difference of Opinion on AARP Policies</label>
+            </value>
+            <value>
+                <fullName>Inconsistent Timeliness or Attendance</fullName>
+                <default>false</default>
+                <label>Inconsistent Timeliness or Attendance</label>
+            </value>
+            <value>
+                <fullName>Legal/Unlawful Issues</fullName>
+                <default>false</default>
+                <label>Legal/Unlawful Issues</label>
+            </value>
+            <value>
+                <fullName>Unable to Perform Requested Activities</fullName>
+                <default>false</default>
+                <label>Unable to Perform Requested Activities</label>
+            </value>
+            <value>
+                <fullName>Not Accepting of Retraining/Redirection</fullName>
+                <default>false</default>
+                <label>Not Accepting of Retraining/Redirection</label>
+            </value>
+            <value>
+                <fullName>Inactive/Can&#39;t Be Contacted</fullName>
+                <default>false</default>
+                <label>Inactive/Can&#39;t Be Contacted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

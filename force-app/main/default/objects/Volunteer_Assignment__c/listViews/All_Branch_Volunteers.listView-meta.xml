@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Branch_Volunteers</fullName>
+    <columns>Contact__c</columns>
+    <columns>Position__c</columns>
+    <columns>Is_Expense_Eligible__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Position__c</field>
+        <operation>startsWith</operation>
+        <value>EC-Balt</value>
+    </filters>
+    <filters>
+        <field>Is_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Is_Expense_Eligible__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>EC-Baltimore Stipends Approval</label>
+    <sharedTo>
+        <group>Expense_Approvers_Experience_Corps</group>
+    </sharedTo>
+</ListView>

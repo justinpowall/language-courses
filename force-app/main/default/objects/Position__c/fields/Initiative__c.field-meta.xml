@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initiative__c</fullName>
+    <description>Designates a specific AARP initiative being supported.</description>
+    <externalId>false</externalId>
+    <label>Initiative</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+                <label>Advocacy</label>
+            </value>
+            <value>
+                <fullName>CarFit</fullName>
+                <default>false</default>
+                <label>CarFit</label>
+            </value>
+            <value>
+                <fullName>Communications</fullName>
+                <default>false</default>
+                <label>Communications</label>
+            </value>
+            <value>
+                <fullName>Community Service</fullName>
+                <default>false</default>
+                <label>Community Service</label>
+            </value>
+            <value>
+                <fullName>Create the Good</fullName>
+                <default>false</default>
+                <label>Create the Good</label>
+            </value>
+            <value>
+                <fullName>Diversity</fullName>
+                <default>false</default>
+                <label>Diversity</label>
+            </value>
+            <value>
+                <fullName>Driver Safety</fullName>
+                <default>false</default>
+                <label>Driver Safety</label>
+            </value>
+            <value>
+                <fullName>Elderwatch - AG</fullName>
+                <default>false</default>
+                <label>Elderwatch - AG</label>
+            </value>
+            <value>
+                <fullName>ElderWatch - Money Gram</fullName>
+                <default>false</default>
+                <label>ElderWatch - Money Gram</label>
+            </value>
+            <value>
+                <fullName>Financial Security</fullName>
+                <default>false</default>
+                <label>Financial Security</label>
+            </value>
+            <value>
+                <fullName>Health Care/LTC/Caregiving</fullName>
+                <default>false</default>
+                <label>Health Care/LTC/Caregiving</label>
+            </value>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>Hunger</fullName>
+                <default>false</default>
+                <label>Hunger</label>
+            </value>
+            <value>
+                <fullName>Information Center</fullName>
+                <default>false</default>
+                <label>Information Center</label>
+            </value>
+            <value>
+                <fullName>Intern</fullName>
+                <default>false</default>
+                <label>Intern</label>
+            </value>
+            <value>
+                <fullName>Legal Counsel for the Elderly</fullName>
+                <default>false</default>
+                <label>Legal Counsel for the Elderly</label>
+            </value>
+            <value>
+                <fullName>Livable Communities</fullName>
+                <default>false</default>
+                <label>Livable Communities</label>
+            </value>
+            <value>
+                <fullName>National Initiatives</fullName>
+                <default>false</default>
+                <label>National Initiatives</label>
+            </value>
+            <value>
+                <fullName>Regional Leadership</fullName>
+                <default>false</default>
+                <label>Regional Leadership</label>
+            </value>
+            <value>
+                <fullName>SNAP Program</fullName>
+                <default>false</default>
+                <label>SNAP Program</label>
+            </value>
+            <value>
+                <fullName>Special Project</fullName>
+                <default>false</default>
+                <label>Special Project</label>
+            </value>
+            <value>
+                <fullName>State Leadership</fullName>
+                <default>false</default>
+                <label>State Leadership</label>
+            </value>
+            <value>
+                <fullName>We Need to Talk</fullName>
+                <default>false</default>
+                <label>We Need to Talk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

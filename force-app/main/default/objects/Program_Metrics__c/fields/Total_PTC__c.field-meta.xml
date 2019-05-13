@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_PTC__c</fullName>
+    <description>Sum of Form 1040 Line 69 (Premium Tax Credit) &gt; $0.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of Form 1040 Line 69 (Premium Tax Credit) &gt; $0.</inlineHelpText>
+    <label>Total PTC</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

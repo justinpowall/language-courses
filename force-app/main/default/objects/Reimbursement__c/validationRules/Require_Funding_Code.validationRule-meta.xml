@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Funding_Code</fullName>
+    <active>false</active>
+    <description>Requires a funding code before a record can be saved. Currently, this is only enforcing this rule for Driver Safety (DS).</description>
+    <errorConditionFormula>AND(
+    RecordType.Name = &quot;Expense Reimbursement&quot;,
+    NOT(ISNEW()),
+    ISBLANK( Funding_Code__c ),
+      OR(Assignment__r.Position__r.Program__r.Branding_Descriptor__c = &quot;Driver Safety&quot;,Assignment__r.Position__r.Program__r.Branding_Descriptor__c = &quot;Tax-Aide&quot;
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Funding_Code__c</errorDisplayField>
+    <errorMessage>In order to save this reimbursement, you must search for and select a funding code.</errorMessage>
+</ValidationRule>

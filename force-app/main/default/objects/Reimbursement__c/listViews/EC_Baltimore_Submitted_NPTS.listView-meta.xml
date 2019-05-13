@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EC_Baltimore_Submitted_NPTS</fullName>
+    <columns>NAME</columns>
+    <columns>Volunteer_ID__c</columns>
+    <columns>Volunteer__c</columns>
+    <columns>Assignment__c</columns>
+    <columns>Position__c</columns>
+    <columns>Reimbursement_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Reimbursement_Total__c</columns>
+    <columns>Submitted_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Position__c</field>
+        <operation>startsWith</operation>
+        <value>EC-Balt</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Not Submitted,Submitted</value>
+    </filters>
+    <filters>
+        <field>Reimbursement_Total__c</field>
+        <operation>notEqual</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Reimbursement_Type__c</field>
+        <operation>equals</operation>
+        <value>Flat Rate</value>
+    </filters>
+    <label>EC Baltimore Submitted NPTS</label>
+    <sharedTo>
+        <group>Experience_Corps_Staff</group>
+    </sharedTo>
+</ListView>

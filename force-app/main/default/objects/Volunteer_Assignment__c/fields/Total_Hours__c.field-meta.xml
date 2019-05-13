@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Hours__c</fullName>
+    <defaultValue>0.0</defaultValue>
+    <description>Total number of hours volunteered for this assignment (total only includes hours that have been submitted and approved).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total number of hours volunteered for this assignment (total only includes hours that have been submitted and approved).</inlineHelpText>
+    <label>Total Hours</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

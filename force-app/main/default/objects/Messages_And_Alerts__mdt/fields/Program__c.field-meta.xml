@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Program</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Chapters</fullName>
+                <default>true</default>
+                <label>Chapters</label>
+            </value>
+            <value>
+                <fullName>Driver Safety</fullName>
+                <default>false</default>
+                <label>Driver Safety</label>
+            </value>
+            <value>
+                <fullName>Experience Corps</fullName>
+                <default>false</default>
+                <label>Experience Corps</label>
+            </value>
+            <value>
+                <fullName>Foundation</fullName>
+                <default>false</default>
+                <label>Foundation</label>
+            </value>
+            <value>
+                <fullName>General Program</fullName>
+                <default>false</default>
+                <label>General Program</label>
+            </value>
+            <value>
+                <fullName>NRTA</fullName>
+                <default>false</default>
+                <label>NRTA</label>
+            </value>
+            <value>
+                <fullName>Purpose Prize</fullName>
+                <default>false</default>
+                <label>Purpose Prize</label>
+            </value>
+            <value>
+                <fullName>States</fullName>
+                <default>false</default>
+                <label>States</label>
+            </value>
+            <value>
+                <fullName>Tax-Aide</fullName>
+                <default>false</default>
+                <label>Tax-Aide</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

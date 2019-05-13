@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Course_ID_Required_for_3rd_Party_Profile</fullName>
+    <active>true</active>
+    <description>3rd party expense user (Cognizant) requests can only be for an ADS assignment and require a value in Course Name.</description>
+    <errorConditionFormula>AND($Profile.Name = &quot;3rd Party Expense User - LMS Admin&quot; ,
+  RecordType.Name = &quot;Expense Reimbursement&quot;,
+ISBLANK( Class__c ),
+Assignment__r.Position__r.Program__r.Branding_Descriptor__c =&quot;Driver Safety&quot;)</errorConditionFormula>
+    <errorDisplayField>Class__c</errorDisplayField>
+    <errorMessage>Current user can only submit reimbursement requests for Driver Safety assignments that include a value in Course Name field.</errorMessage>
+</ValidationRule>

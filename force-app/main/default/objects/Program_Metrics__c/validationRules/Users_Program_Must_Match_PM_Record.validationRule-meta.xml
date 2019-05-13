@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Users_Program_Must_Match_PM_Record</fullName>
+    <active>true</active>
+    <description>This validation rule ensures that users are only editing PM records for their own Program.</description>
+    <errorConditionFormula>OR(
+
+(AND(
+NOT(CONTAINS($Profile.Name, &quot;Tax-Aide&quot;)), NOT(CONTAINS($Profile.Name, &quot;System&quot;)),
+OR(
+(Program__r.Enterprise_Brand__c = &quot;Tax-Aide&quot;)
+)
+)),
+(AND(
+NOT(CONTAINS($Profile.Name, &quot;Driver Safety&quot;)), NOT(CONTAINS($Profile.Name, &quot;System&quot;)),
+OR(
+(Program__r.Enterprise_Brand__c = &quot;Driver Safety&quot;)
+)
+)),
+(AND(
+NOT(CONTAINS($Profile.Name, &quot;Chapters&quot;)), NOT(CONTAINS($Profile.Name, &quot;System&quot;)),
+OR(
+(Program__r.Enterprise_Brand__c = &quot;Chapters&quot;)
+)
+))
+)</errorConditionFormula>
+    <errorMessage>Users may only edit Program Metrics records for their own Program. Please ensure you are editing a PM record for your Program.</errorMessage>
+</ValidationRule>

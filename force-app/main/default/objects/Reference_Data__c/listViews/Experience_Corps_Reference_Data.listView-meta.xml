@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Experience_Corps_Reference_Data</fullName>
+    <columns>NAME</columns>
+    <columns>Program__c</columns>
+    <columns>Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Referral Source</value>
+    </filters>
+    <filters>
+        <field>Program_Name__c</field>
+        <operation>contains</operation>
+        <value>Experience Corps</value>
+    </filters>
+    <label>Experience Corps Reference Data</label>
+    <sharedTo>
+        <role>VTM_Manager</role>
+    </sharedTo>
+</ListView>

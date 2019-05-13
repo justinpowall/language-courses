@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_to_Mileage_or_Non_Mileage</fullName>
+    <active>true</active>
+    <description>Prevents a user from submitting mileage amount and non-mileage amount on the same line item.</description>
+    <errorConditionFormula>AND(
+NOT( ISBLANK( Miles__c )),
+NOT( ISBLANK(  Amount__c  )) 
+)</errorConditionFormula>
+    <errorMessage>A line item cannot have both mileage and non-mileage amounts. Please enter a value in either the Amount field or the Miles field.</errorMessage>
+</ValidationRule>

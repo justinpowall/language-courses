@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Learning_Path_Notification_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is a lookup relationship to the learning path notification record object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to associate a learning path notification record to a position.</inlineHelpText>
+    <label>Learning Path Notification ID</label>
+    <referenceTo>Learning_Path_Notification_Record__c</referenceTo>
+    <relationshipLabel>LPN Positions</relationshipLabel>
+    <relationshipName>LPNR_Positions</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

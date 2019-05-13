@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExternalID__c</fullName>
+    <externalId>false</externalId>
+    <formula>EFIN__c &amp; &#39;-&#39; &amp; TEXT( YEAR(Report_Period_Start_Date__c)) &amp; TEXT(MONTH(Report_Period_Start_Date__c)) &amp; TEXT(DAY(Report_Period_Start_Date__c)) &amp; &#39;-&#39; &amp; TEXT(YEAR(Report_Period_End_Date__c)) &amp; TEXT(MONTH(Report_Period_End_Date__c)) &amp; TEXT(DAY(Report_Period_End_Date__c)) &amp;&#39;-&#39; &amp; Program__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ExternalID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Expense_Eligible__c</fullName>
+    <description>Formula field indicating if assignment is expense eligible.</description>
+    <externalId>false</externalId>
+    <formula>OR(
+AND(
+ISPICKVAL( Position__r.Expense_Eligible__c, &quot;YES&quot;), 
+Is_Active__c = TRUE,
+ISPICKVAL(Status__c, &quot;Approved&quot;),
+TODAY() &gt;= Start_Date__c),
+
+AND(ISPICKVAL(Position__r.Candidate_Expenses_Permitted__c, &quot;YES&quot;),
+Is_Active__c = TRUE),
+
+AND(
+Position__r.Non_Payroll_Taxed_Stipend_Eligible__c = TRUE, 
+Is_Active__c = TRUE,
+ISPICKVAL(Status__c, &quot;Approved&quot;),
+TODAY() &gt;= Start_Date__c,
+YTD_Non_payroll_Taxed_Stipends_Paid__c  &lt; Max_num_non_payroll_tax_stipends_allowed__c 
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indicates if assignment is expense eligible.</inlineHelpText>
+    <label>Is Expense Eligible</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

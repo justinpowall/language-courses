@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Experience_Corps_Active_Grant_Contacts</fullName>
+    <columns>NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>Grant__c</columns>
+    <columns>Grant_Year__c</columns>
+    <columns>Is_Active__c</columns>
+    <columns>Stipend_Payment_Error__c</columns>
+    <columns>Stipend_Payments_YTD__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Is_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Experience Corps Active Grant Contacts</label>
+    <sharedTo>
+        <group>Experience_Corps_Staff</group>
+    </sharedTo>
+</ListView>

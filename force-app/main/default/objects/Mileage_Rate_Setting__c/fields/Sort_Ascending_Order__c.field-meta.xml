@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sort_Ascending_Order__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sort values from low to high.  Ex :  10.0, 20.0, 30.0, 40.0, 50.0 57.5.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sort values from low to high.  Ex :  10.0, 20.0, 30.0, 40.0, 50.0 57.5.</inlineHelpText>
+    <label>Sort Ascending Order</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

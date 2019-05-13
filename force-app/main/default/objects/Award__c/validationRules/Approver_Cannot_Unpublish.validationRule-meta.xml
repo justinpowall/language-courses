@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approver_Cannot_Unpublish</fullName>
+    <active>true</active>
+    <description>Approver cannot unpublish an award record once it has been published.</description>
+    <errorConditionFormula>AND( 
+NOT(Publish__c),
+ISPICKVAL(Status__c, &quot;Approved&quot;),
+OR( 
+$Profile.Name = &quot;Tax-Aide Volunteer Leader - LMS Admin&quot;,
+$Profile.Name = &quot;Tax-Aide Volunteer Leader - Read Only - LMS Admin&quot;
+))</errorConditionFormula>
+    <errorMessage>Approver cannot unpublish an award record once it has been published.</errorMessage>
+</ValidationRule>

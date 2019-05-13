@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waitlisted__c</fullName>
+    <description>Waitlisted = count of Event Registrants where (Registrant Status = Waitlisted)</description>
+    <externalId>false</externalId>
+    <label>Waitlisted</label>
+    <summaryFilterItems>
+        <field>Event_Registrant__c.Registrant_Status__c</field>
+        <operation>equals</operation>
+        <value>Waitlisted</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Event_Registrant__c.Volunteer_Event__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

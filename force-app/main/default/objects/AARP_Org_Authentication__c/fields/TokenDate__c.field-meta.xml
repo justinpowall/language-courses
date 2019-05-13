@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TokenDate__c</fullName>
+    <description>The datetime value for the last time an AARP.org token was refreshed by the getToken callout</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The datetime value for the last time an AARP.org token was refreshed by the getToken callout</inlineHelpText>
+    <label>TokenDate</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Member_Participation_Day_of_Service__c</fullName>
+    <description>How many members (total) participated in this year&#39;s AARP Day of Service event?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many members (total) participated in this year&#39;s AARP Day of Service event?</inlineHelpText>
+    <label>Member Participation: Day of Service</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

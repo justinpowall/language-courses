@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DS_ND_Pending_Pre_Approvals</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Volunteer__c</columns>
+    <columns>Reimbursement_Total__c</columns>
+    <columns>Description__c</columns>
+    <columns>Course_ID__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Position__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Reimbursement__c.Expense_Pre_Approval</value>
+    </filters>
+    <filters>
+        <field>Position__c</field>
+        <operation>equals</operation>
+        <value>DS-ND</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <filters>
+        <field>Position__c</field>
+        <operation>notContain</operation>
+        <value>carfit,wntt</value>
+    </filters>
+    <filters>
+        <field>Funding_Code__c</field>
+        <operation>notContain</operation>
+        <value>carfit,we need to talk</value>
+    </filters>
+    <filters>
+        <field>Funding_Code__c</field>
+        <operation>notEqual</operation>
+        <value>Driver Safety - National Office Volunteer Engagement</value>
+    </filters>
+    <label>DS: ND - Pending Pre-Approvals</label>
+    <sharedTo>
+        <group>Driver_Safety_Staff</group>
+        <portalRole>AllenDockterPartnerUser</portalRole>
+        <portalRole>BrianLarsonPartnerUser</portalRole>
+        <portalRole>JosephAlmePartnerUser</portalRole>
+        <portalRole>PeterCKuhnPartnerUser</portalRole>
+        <portalRole>RobertDKellermanPartnerUser</portalRole>
+    </sharedTo>
+</ListView>

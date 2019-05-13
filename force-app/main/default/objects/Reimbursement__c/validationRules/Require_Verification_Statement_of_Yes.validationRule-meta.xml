@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Verification_Statement_of_Yes</fullName>
+    <active>false</active>
+    <description>In order to save a reimbursement, user must select Yes for the verification statement field. This is to ensure it does not get submitted with No as the value.</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &#39;Expense Reimbursement&#39;,
+ ISPICKVAL(Verification_Statement__c, &#39;No&#39;)
+)</errorConditionFormula>
+    <errorDisplayField>Verification_Statement__c</errorDisplayField>
+    <errorMessage>In order to save and submit a reimbursement, you must select yes in the Verification Statement field (roll over the help icon to the left of the Verification Statement field to review what you are certifying).</errorMessage>
+</ValidationRule>

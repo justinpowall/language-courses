@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stipend_Eligible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to capture if the time categories hours can be used to count against monthly hours needed for a stipend payment.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If hours charged against this time entry category are stipend eligible, check this box. If the hours are not eligible to count towards monthly stipend hour requirement, leave this box unchecked.</inlineHelpText>
+    <label>Stipend Eligible</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

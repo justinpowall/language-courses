@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statewide_Opening__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box if this position should be posted statewide.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if this position should be posted statewide.</inlineHelpText>
+    <label>Statewide Opening</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

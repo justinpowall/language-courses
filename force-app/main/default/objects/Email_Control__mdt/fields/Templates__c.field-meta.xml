@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Templates__c</fullName>
+    <description>Just a list of all the email template names that this field controls.  Doesn&#39;t do anything programmatically.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Templates</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>16</visibleLines>
+</CustomField>

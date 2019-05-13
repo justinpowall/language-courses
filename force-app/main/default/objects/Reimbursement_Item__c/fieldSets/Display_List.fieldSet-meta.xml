@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Display_List</fullName>
+    <description>On Reimbursements in the past and now in the updated Reimbursement Builder page.</description>
+    <displayedFields>
+        <field>Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Display List</label>
+</FieldSet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADS_Salesforce_Profiles__c</fullName>
+    <defaultValue>&#39;System Administrator, Driver Safety Staff - LMS Admin&#39;</defaultValue>
+    <description>Users with those profiles don&#39;t have contacts but with access to &#39;Driver Safety Courses&#39; tab.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please add a comma-separated names of the profiles.</inlineHelpText>
+    <label>ADS Salesforce Profiles</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

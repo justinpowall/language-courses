@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Congressional_District_Number__c</fullName>
+    <description>Congressional district.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter your 2-character congressional district number.</inlineHelpText>
+    <label>Congressional District Number</label>
+    <length>3</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

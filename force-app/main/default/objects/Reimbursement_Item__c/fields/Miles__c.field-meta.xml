@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Miles__c</fullName>
+    <description>Captures the number of miles being submitted on the reimbursement item record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the number of miles traveled in association with your work with AARP Volunteer Programs.</inlineHelpText>
+    <label>Miles</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

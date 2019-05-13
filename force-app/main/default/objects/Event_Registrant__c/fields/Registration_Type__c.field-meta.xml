@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Type__c</fullName>
+    <description>What is the volunteer&#39;s role in the event?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the volunteer&#39;s role in the event?</inlineHelpText>
+    <label>Registration Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Volunteer Worker</fullName>
+                <default>false</default>
+                <label>Volunteer Worker</label>
+            </value>
+            <value>
+                <fullName>Volunteer Attendee</fullName>
+                <default>false</default>
+                <label>Volunteer Attendee</label>
+            </value>
+            <value>
+                <fullName>AARP Board of Directors</fullName>
+                <default>false</default>
+                <label>AARP Board of Directors</label>
+            </value>
+            <value>
+                <fullName>AARP Executive Team</fullName>
+                <default>false</default>
+                <label>AARP Executive Team</label>
+            </value>
+            <value>
+                <fullName>AARP Foundation Staff</fullName>
+                <default>false</default>
+                <label>AARP Foundation Staff</label>
+            </value>
+            <value>
+                <fullName>AARP Member</fullName>
+                <default>false</default>
+                <label>AARP Member</label>
+            </value>
+            <value>
+                <fullName>AARP Member - Consumer Cellular Contact Center</fullName>
+                <default>false</default>
+                <label>AARP Member - Consumer Cellular Contact Center</label>
+            </value>
+            <value>
+                <fullName>AARP Member or Consumer</fullName>
+                <default>false</default>
+                <label>AARP Member or Consumer</label>
+            </value>
+            <value>
+                <fullName>AARP National Office Staff</fullName>
+                <default>false</default>
+                <label>AARP National Office Staff</label>
+            </value>
+            <value>
+                <fullName>AARP Staff</fullName>
+                <default>false</default>
+                <label>AARP Staff</label>
+            </value>
+            <value>
+                <fullName>AARP Staff - Call Center</fullName>
+                <default>false</default>
+                <label>AARP Staff - Call Center</label>
+            </value>
+            <value>
+                <fullName>AARP State Office</fullName>
+                <default>false</default>
+                <label>AARP State Office</label>
+            </value>
+            <value>
+                <fullName>AARP Volunteer</fullName>
+                <default>false</default>
+                <label>AARP Volunteer</label>
+            </value>
+            <value>
+                <fullName>AARP Volunteer - Call Center</fullName>
+                <default>false</default>
+                <label>AARP Volunteer - Call Center</label>
+            </value>
+            <value>
+                <fullName>Additional Vietnam Vet Guest (Not Free) - Call Cen</fullName>
+                <default>false</default>
+                <label>Additional Vietnam Vet Guest (Not Free) - Call Cen</label>
+            </value>
+            <value>
+                <fullName>Additional Vietnam Veteran Guests (Not Free)</fullName>
+                <default>false</default>
+                <label>Additional Vietnam Veteran Guests (Not Free)</label>
+            </value>
+            <value>
+                <fullName>Additional Volunteer</fullName>
+                <default>false</default>
+                <label>Additional Volunteer</label>
+            </value>
+            <value>
+                <fullName>Campaign Aging 1 Day</fullName>
+                <default>false</default>
+                <label>Campaign Aging 1 Day</label>
+            </value>
+            <value>
+                <fullName>Campaign Aging 2 Days</fullName>
+                <default>false</default>
+                <label>Campaign Aging 2 Days</label>
+            </value>
+            <value>
+                <fullName>Campaign for Action - Fee</fullName>
+                <default>false</default>
+                <label>Campaign for Action - Fee</label>
+            </value>
+            <value>
+                <fullName>Capitol Hill Staff Volunteers</fullName>
+                <default>false</default>
+                <label>Capitol Hill Staff Volunteers</label>
+            </value>
+            <value>
+                <fullName>CEJC Member</fullName>
+                <default>false</default>
+                <label>CEJC Member</label>
+            </value>
+            <value>
+                <fullName>CEJC Non Member</fullName>
+                <default>false</default>
+                <label>CEJC Non Member</label>
+            </value>
+            <value>
+                <fullName>Community Partner</fullName>
+                <default>false</default>
+                <label>Community Partner</label>
+            </value>
+            <value>
+                <fullName>CSN Leadership - Volunteer</fullName>
+                <default>false</default>
+                <label>CSN Leadership - Volunteer</label>
+            </value>
+            <value>
+                <fullName>CSN Leadership Summit - State Director/Manager</fullName>
+                <default>false</default>
+                <label>CSN Leadership Summit - State Director/Manager</label>
+            </value>
+            <value>
+                <fullName>CSN Leadership Team</fullName>
+                <default>false</default>
+                <label>CSN Leadership Team</label>
+            </value>
+            <value>
+                <fullName>DC-MD-VA State Office Staff</fullName>
+                <default>false</default>
+                <label>DC-MD-VA State Office Staff</label>
+            </value>
+            <value>
+                <fullName>Exhibitor</fullName>
+                <default>false</default>
+                <label>Exhibitor</label>
+            </value>
+            <value>
+                <fullName>Experience Corps</fullName>
+                <default>false</default>
+                <label>Experience Corps</label>
+            </value>
+            <value>
+                <fullName>Foundation Supporters</fullName>
+                <default>false</default>
+                <label>Foundation Supporters</label>
+            </value>
+            <value>
+                <fullName>Grant Applicant</fullName>
+                <default>false</default>
+                <label>Grant Applicant</label>
+            </value>
+            <value>
+                <fullName>Guest</fullName>
+                <default>false</default>
+                <label>Guest</label>
+            </value>
+            <value>
+                <fullName>Guest - Call Center</fullName>
+                <default>false</default>
+                <label>Guest - Call Center</label>
+            </value>
+            <value>
+                <fullName>Import Contact Type</fullName>
+                <default>false</default>
+                <label>Import Contact Type</label>
+            </value>
+            <value>
+                <fullName>Invited Guest</fullName>
+                <default>false</default>
+                <label>Invited Guest</label>
+            </value>
+            <value>
+                <fullName>Member - Call Center Registration</fullName>
+                <default>false</default>
+                <label>Member - Call Center Registration</label>
+            </value>
+            <value>
+                <fullName>National Headquarters Volunteer</fullName>
+                <default>false</default>
+                <label>National Headquarters Volunteer</label>
+            </value>
+            <value>
+                <fullName>National Office/DC Metro Area Staff</fullName>
+                <default>false</default>
+                <label>National Office/DC Metro Area Staff</label>
+            </value>
+            <value>
+                <fullName>Non Vietnam Vet</fullName>
+                <default>false</default>
+                <label>Non Vietnam Vet</label>
+            </value>
+            <value>
+                <fullName>Non Vietnam Vet - Call Center</fullName>
+                <default>false</default>
+                <label>Non Vietnam Vet - Call Center</label>
+            </value>
+            <value>
+                <fullName>Non-Member</fullName>
+                <default>false</default>
+                <label>Non-Member</label>
+            </value>
+            <value>
+                <fullName>Non-Member - Call Center Registration</fullName>
+                <default>false</default>
+                <label>Non-Member - Call Center Registration</label>
+            </value>
+            <value>
+                <fullName>Non-Member - Consumer Cellular Contact Center</fullName>
+                <default>false</default>
+                <label>Non-Member - Consumer Cellular Contact Center</label>
+            </value>
+            <value>
+                <fullName>Pop-Up Attendee</fullName>
+                <default>false</default>
+                <label>Pop-Up Attendee</label>
+            </value>
+            <value>
+                <fullName>Public Policy</fullName>
+                <default>false</default>
+                <label>Public Policy</label>
+            </value>
+            <value>
+                <fullName>Register in Spanish</fullName>
+                <default>false</default>
+                <label>Register in Spanish</label>
+            </value>
+            <value>
+                <fullName>Schwab Program Participants</fullName>
+                <default>false</default>
+                <label>Schwab Program Participants</label>
+            </value>
+            <value>
+                <fullName>Shift Volunteer</fullName>
+                <default>false</default>
+                <label>Shift Volunteer</label>
+            </value>
+            <value>
+                <fullName>SNG Leadership Summit: Group A</fullName>
+                <default>false</default>
+                <label>SNG Leadership Summit: Group A</label>
+            </value>
+            <value>
+                <fullName>SNG Leadership Summit: Group B</fullName>
+                <default>false</default>
+                <label>SNG Leadership Summit: Group B</label>
+            </value>
+            <value>
+                <fullName>SNG Leadership Summit: Group C</fullName>
+                <default>false</default>
+                <label>SNG Leadership Summit: Group C</label>
+            </value>
+            <value>
+                <fullName>SNG Leadership Summit: Group D</fullName>
+                <default>false</default>
+                <label>SNG Leadership Summit: Group D</label>
+            </value>
+            <value>
+                <fullName>SNG Leadership Summit: Group E</fullName>
+                <default>false</default>
+                <label>SNG Leadership Summit: Group E</label>
+            </value>
+            <value>
+                <fullName>SNG Leadership Summit: Group F</fullName>
+                <default>false</default>
+                <label>SNG Leadership Summit: Group F</label>
+            </value>
+            <value>
+                <fullName>SNG Leadership Summit: Group G</fullName>
+                <default>false</default>
+                <label>SNG Leadership Summit: Group G</label>
+            </value>
+            <value>
+                <fullName>Socio de AARP</fullName>
+                <default>false</default>
+                <label>Socio de AARP</label>
+            </value>
+            <value>
+                <fullName>Speaker</fullName>
+                <default>false</default>
+                <label>Speaker</label>
+            </value>
+            <value>
+                <fullName>State and NON-National Office Staff</fullName>
+                <default>false</default>
+                <label>State and NON-National Office Staff</label>
+            </value>
+            <value>
+                <fullName>Test</fullName>
+                <default>false</default>
+                <label>Test</label>
+            </value>
+            <value>
+                <fullName>Vietnam Vet</fullName>
+                <default>false</default>
+                <label>Vietnam Vet</label>
+            </value>
+            <value>
+                <fullName>Vietnam Vet - Call Center</fullName>
+                <default>false</default>
+                <label>Vietnam Vet - Call Center</label>
+            </value>
+            <value>
+                <fullName>Vietnam Vet Guest (1 Free)</fullName>
+                <default>false</default>
+                <label>Vietnam Vet Guest (1 Free)</label>
+            </value>
+            <value>
+                <fullName>Vietnam Vet Guest (1 Free) - Call Cen</fullName>
+                <default>false</default>
+                <label>Vietnam Vet Guest (1 Free) - Call Cen</label>
+            </value>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+            <value>
+                <fullName>Volunteer Facilitators</fullName>
+                <default>false</default>
+                <label>Volunteer Facilitators</label>
+            </value>
+            <value>
+                <fullName>Volunteer Leader</fullName>
+                <default>false</default>
+                <label>Volunteer Leader</label>
+            </value>
+            <value>
+                <fullName>Volunteer Money Mentors</fullName>
+                <default>false</default>
+                <label>Volunteer Money Mentors</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

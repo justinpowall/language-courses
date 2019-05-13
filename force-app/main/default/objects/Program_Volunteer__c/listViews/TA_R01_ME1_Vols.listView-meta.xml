@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TA_R01_ME1_Vols</fullName>
+    <columns>NAME</columns>
+    <columns>Volunteer__c</columns>
+    <columns>Program__c</columns>
+    <columns>Program_Route_To__c</columns>
+    <columns>Status__c</columns>
+    <columns>Program_Start_Date__c</columns>
+    <columns>Net_Years_Served__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>equals</operation>
+        <value>Tax-Aide</value>
+    </filters>
+    <filters>
+        <field>Program_Route_To__c</field>
+        <operation>startsWith</operation>
+        <value>TA-R01-ME1</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Volunteer,Under Consideration</value>
+    </filters>
+    <filters>
+        <field>Annual_Certification_Requirements_Met__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>TA - R01 - ME1 -  Vols &amp; PVs</label>
+    <sharedTo>
+        <group>Tax_Aide_Staff</group>
+        <group>Tax_Aide_TA_R01_ME1</group>
+    </sharedTo>
+</ListView>

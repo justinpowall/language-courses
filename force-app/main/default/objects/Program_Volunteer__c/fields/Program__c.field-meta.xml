@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <description>This is a master-detail relationship to the Program object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to associate a volunteer to an enterprise level program.</inlineHelpText>
+    <label>Program</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Value must be an enterprise level program.</errorMessage>
+        <filterItems>
+            <field>Program__c.Enterprise_Level_Program__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Program__c</referenceTo>
+    <relationshipLabel>Program Volunteers</relationshipLabel>
+    <relationshipName>Program_Volunteers</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

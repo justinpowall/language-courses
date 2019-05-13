@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact__c</fullName>
+    <description>The master-detail lookup field related to the Contact object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the volunteer that is associated with this assignment and click the search button to the right of the field. A new window will open. At this point, select the volunteer who will be fulfilling this assignment.</inlineHelpText>
+    <label>Volunteer</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipName>Assignments</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

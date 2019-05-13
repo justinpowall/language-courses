@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lockout__c</fullName>
+    <description>Record is only editable by authorized users on or after this date. Please contact a staff person from your program for assistance.</description>
+    <externalId>false</externalId>
+    <formula>DATE(VALUE(Tax_Year__c)+1,4,1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Record is only editable by authorized users on or after this date. Please contact a staff person from your program for assistance.</inlineHelpText>
+    <label>Lockout Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mass_Approval</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Mass Approval</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/apex.js&quot;)} 
+
+
+var allowedProfiles = [&quot;Tax-Aide Staff - LMS Admin&quot;, &quot;Tax-Aide Volunteer Leader - LMS Admin&quot;, &quot;Tax-Aide Volunteer Leader - Read Only - LMS Admin&quot;, &quot;System Administrator&quot;];
+
+
+var positionId =  &quot;{!Volunteer_Assignment__c.PositionId__c}&quot;;
+
+var userProfile = &quot;{!User.Profile}&quot;;
+
+if ( allowedProfiles.indexOf( userProfile ) == -1 ) {
+alert(&quot;This is for Tax-Aide users only&quot;);
+}
+
+else {
+
+ var leadRec = sforce.connection.query(&quot;SELECT Program__c,Program__r.Name,Program__r.Branding_Descriptor__c From Position__c where ID = &#39;&quot;+positionId+&quot;&#39; LIMIT 1&quot;);
+
+
+var parsing = leadRec.getArray(&quot;records&quot;);
+
+
+if (parsing[0].Program__r.Branding_Descriptor__c!= &quot;Tax-Aide&quot;) {
+alert(&quot;Only applicable for Tax Aide assignments&quot;);
+
+}
+else{
+
+var urlPrefix= &#39;{!$Site.Prefix}&#39;; 
+
+
+window.location.href=&quot;{!$Site.Prefix}/apex/ReimbursementMassApprovalPage?assignID={!Volunteer_Assignment__c.Id}&quot; 
+
+
+
+
+
+
+}
+
+}</url>
+</WebLink>

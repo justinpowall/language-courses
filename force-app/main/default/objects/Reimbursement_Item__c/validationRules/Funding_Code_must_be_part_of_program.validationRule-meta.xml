@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Code_must_be_part_of_program</fullName>
+    <active>true</active>
+    <description>The Funding Code you&#39;ve selected does not align with your program. Please switch to the program against which you are charging this reimbursement and search again.</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(Funding_Code__c)),
+Expense__r.Assignment__r.Position__r.Program__r.Branding_Descriptor__c != Funding_Code__r.Program__r.Branding_Descriptor__c,Expense__r.Assignment__r.Position__r.Program__r.Branding_Descriptor__c != &#39;States&#39;,Expense__r.Assignment__r.Position__r.Program__r.Branding_Descriptor__c !=&#39;Life Reimagined&#39;
+)</errorConditionFormula>
+    <errorMessage>The Funding Code must be selected from within the current Program associated with the Reimbursement Item and Reimbursement.</errorMessage>
+</ValidationRule>

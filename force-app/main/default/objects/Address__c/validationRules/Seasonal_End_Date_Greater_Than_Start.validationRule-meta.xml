@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seasonal_End_Date_Greater_Than_Start</fullName>
+    <active>true</active>
+    <description>Season_End_Date__c must be greater than TODAY.</description>
+    <errorConditionFormula>Seasonal_Address_Start_Date__c &gt;= Seasonal_Address_End_Date__c</errorConditionFormula>
+    <errorDisplayField>Seasonal_Address_End_Date__c</errorDisplayField>
+    <errorMessage>Seasonal End Date must be later than the Seasonal Start Date.</errorMessage>
+</ValidationRule>

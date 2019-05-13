@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Pre_Approval</fullName>
+    <active>true</active>
+    <description>Estimated expenses which require pre-approval in order to submit actual expense reimbursement.</description>
+    <label>Expense Pre-Approval</label>
+    <picklistValues>
+        <picklist>Reimbursement_Type__c</picklist>
+        <values>
+            <fullName>Flat Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Itemized</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved by Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Further Action Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Submitted</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Verification_Statement__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

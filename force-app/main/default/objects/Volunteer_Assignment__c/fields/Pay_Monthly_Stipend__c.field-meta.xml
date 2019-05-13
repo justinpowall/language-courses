@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pay_Monthly_Stipend__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Captures whether an EC assignment is eligible for a stipend payment for a given month.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Did the volunteer associated with this assignment meet all requirements to be paid a stipend this month? If so, check this field.</inlineHelpText>
+    <label>Pay Monthly Stipend</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

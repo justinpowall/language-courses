@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Aide_Leadership_Roles</fullName>
+    <columns>NAME</columns>
+    <columns>Program__c</columns>
+    <columns>Tax_Aide_Leadership_Role__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Tax_Aide_Leadership_Role__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Program__c</field>
+        <operation>contains</operation>
+        <value>Tax-Aide</value>
+    </filters>
+    <label>Tax-Aide Leadership Roles</label>
+    <sharedTo>
+        <role>VTM_Manager</role>
+    </sharedTo>
+</ListView>

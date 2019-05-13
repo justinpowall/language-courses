@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_User_Record__c</fullName>
+    <description>Verifies selected user record is active.</description>
+    <externalId>false</externalId>
+    <formula>User_Recipient__r.IsActive</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Selected LPNR recipient has an active user record.</inlineHelpText>
+    <label>Active User Record</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

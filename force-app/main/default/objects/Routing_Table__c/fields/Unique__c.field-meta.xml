@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Hidden field used to populate with Name value (via workflow) to ensure zip codes are unique for each record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Hidden field used to populate with Name value (via workflow) to ensure zip codes are unique for each record.</inlineHelpText>
+    <label>Unique Zip Code</label>
+    <length>5</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

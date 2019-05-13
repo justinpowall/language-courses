@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Be_Other_To_Enter_Other_Reason</fullName>
+    <active>true</active>
+    <description>If dismissal reason is not = other, then other dismissal reason must be blank.</description>
+    <errorConditionFormula>AND(
+ NOT(ISPICKVAL(  Termination_Reason__c  , &quot;Other&quot;)),
+ NOT(ISBLANK(  Other_Termination_Reason__c  ))
+)</errorConditionFormula>
+    <errorDisplayField>Termination_Reason__c</errorDisplayField>
+    <errorMessage>If dismissal reason is not = other, then other dismissal reason must be blank.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Third_Party_Profile_Only_Submits_for_ADS</fullName>
+    <active>true</active>
+    <description>3rd party expense user profile (Cognizant) can only submit expenses for ADS</description>
+    <errorConditionFormula>AND($Profile.Name = &quot;3rd Party Expense User - LMS Admin&quot;,
+ Assignment__r.Position__r.Program__r.Branding_Descriptor__c &lt;&gt; &quot;Driver Safety&quot;)</errorConditionFormula>
+    <errorDisplayField>Assignment__c</errorDisplayField>
+    <errorMessage>Current user can only submit reimbursement requests for Driver Safety assignments.</errorMessage>
+</ValidationRule>

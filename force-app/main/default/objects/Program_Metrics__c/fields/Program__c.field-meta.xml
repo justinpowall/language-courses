@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>This is the lookup field for the Program object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In this field, search for and select the Program that is associated with this Program Metrics record.</inlineHelpText>
+    <label>Program</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <filterItems>
+            <field>Program__c.Branding_Descriptor__c</field>
+            <operation>equals</operation>
+            <value>Chapters</value>
+        </filterItems>
+        <filterItems>
+            <field>Program__c.Branding_Descriptor__c</field>
+            <operation>equals</operation>
+            <value>Tax-Aide</value>
+        </filterItems>
+        <filterItems>
+            <field>Program__c.Branding_Descriptor__c</field>
+            <operation>equals</operation>
+            <value>Driver Safety</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Program__c</referenceTo>
+    <relationshipLabel>Program Metrics</relationshipLabel>
+    <relationshipName>Program_Metrics</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

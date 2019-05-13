@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Responsibilities__c</fullName>
+    <description>Key responsibilities for this position.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What are the key responsibilities for this position?</inlineHelpText>
+    <label>Key Responsibilities</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

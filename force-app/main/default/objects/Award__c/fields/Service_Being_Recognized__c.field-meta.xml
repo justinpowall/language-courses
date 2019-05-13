@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Being_Recognized__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate the reason for your nomination. What makes this person’s service distinguished? What is this volunteer’s significant contribution that makes him/her an appropriate person to be selected as one of this year’s Fellow recipients?</inlineHelpText>
+    <label>Service Being Recognized</label>
+    <length>32768</length>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

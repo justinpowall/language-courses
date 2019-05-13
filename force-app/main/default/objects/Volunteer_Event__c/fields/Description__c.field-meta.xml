@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description__c</fullName>
+    <description>Program event description</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If left blank, the Description from the Cvent Event Template will be populated. If information is entered here, it will override anything from the Event Template and display to the public.</inlineHelpText>
+    <label>Description</label>
+    <length>20000</length>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

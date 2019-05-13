@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Accounting_Code</fullName>
+    <active>true</active>
+    <description>Requires Program Code and Expense Type values prior to saving a reimbursement item.</description>
+    <errorConditionFormula>ISBLANK(Accounting_Code__c)</errorConditionFormula>
+    <errorMessage>Please select a Program Code and Expense Type prior to saving this line item.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Route_To__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field used to route (or re-route) prospects to the appropriate program for recruitment process.  Value derived from Routing_Table object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Search for routing indicator to route (or re-route) prospects to the appropriate program for recruitment process.</inlineHelpText>
+    <label>Zip Code Route To</label>
+    <referenceTo>Routing_Table__c</referenceTo>
+    <relationshipLabel>Program Volunteers</relationshipLabel>
+    <relationshipName>Program_Volunteers</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

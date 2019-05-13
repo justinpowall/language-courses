@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_Origin</fullName>
+    <active>true</active>
+    <description>The validates that if the Appointment origin selected is Other, user completes text.</description>
+    <errorConditionFormula>OR
+(And
+(
+ISPICKVAL(Appointment_Origin__c,&quot;Other&quot;),
+ISBLANK(Origin_Other_Notes__c)
+),
+And
+(
+NOT(ISPICKVAL(Appointment_Origin__c,&quot;Other&quot;)),
+NOT(ISBLANK(Origin_Other_Notes__c))
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>Origin_Other_Notes__c</errorDisplayField>
+    <errorMessage>Please tell us how your appointment was scheduled with Tax-Aide</errorMessage>
+</ValidationRule>

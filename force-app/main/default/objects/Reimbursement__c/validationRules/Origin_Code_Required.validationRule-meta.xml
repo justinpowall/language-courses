@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origin_Code_Required</fullName>
+    <active>true</active>
+    <description>Origin Code is required when the status is Approved by Program</description>
+    <errorConditionFormula>AND(
+ ISBLANK( Origin_Code__c ),  ISPICKVAL( Status__c , &quot;Approved By Program&quot;)   
+
+)</errorConditionFormula>
+    <errorMessage>There was a problem approving your reimbursement please contact your supervisor or system administrator</errorMessage>
+</ValidationRule>

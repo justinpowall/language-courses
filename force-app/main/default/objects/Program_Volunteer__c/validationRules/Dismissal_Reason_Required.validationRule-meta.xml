@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dismissal_Reason_Required</fullName>
+    <active>true</active>
+    <description>Dismissal Reason required when Assignment Ended = Dismissed.</description>
+    <errorConditionFormula>AND(  
+    Program__r.Branding_Descriptor__c &lt;&gt; &quot;Driver Safety&quot;,
+    ISPICKVAL(Assignment_Ended_Reason__c, &quot;Dismissed&quot;),
+    ISPICKVAL(Termination_Reason__c, &quot;&quot;),
+    NOT(CONTAINS($Profile.Name, &quot;Volunteer&quot;)))</errorConditionFormula>
+    <errorDisplayField>Termination_Reason__c</errorDisplayField>
+    <errorMessage>Dismissal Reason is required if Assignment Ended Reason = Dismissed and program is not Driver Safety.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <description>The master-detail lookup to the program object associated with the position record being created/edited.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Search for and select the Program that is associated with this Position record.</inlineHelpText>
+    <label>Program</label>
+    <referenceTo>Program__c</referenceTo>
+    <relationshipLabel>Positions</relationshipLabel>
+    <relationshipName>Positions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

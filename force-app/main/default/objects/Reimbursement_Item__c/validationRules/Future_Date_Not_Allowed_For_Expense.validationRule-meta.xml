@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Future_Date_Not_Allowed_For_Expense</fullName>
+    <active>true</active>
+    <description>User cannot input future dates for expenses. Only for expenses that have already been incurred</description>
+    <errorConditionFormula>AND(Date__c &gt; Today(), Expense__r.RecordType.Name = &#39;Expense Reimbursement&#39;)</errorConditionFormula>
+    <errorMessage>The date you entered is a date in the future, please select the date the expense was incurred.</errorMessage>
+</ValidationRule>

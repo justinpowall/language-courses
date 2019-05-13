@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Name_Read_Only_For_Chapters</fullName>
+    <active>true</active>
+    <description>Chapter profiles cannot edit program name.</description>
+    <errorConditionFormula>AND(
+ ISCHANGED(Name),
+ CONTAINS($Profile.Name, &quot;Chapters&quot;),  
+ NOT($Permission.Delegated_Administrator) 
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Program name cannot be changed.  Please contact your system administrator for this record change.</errorMessage>
+</ValidationRule>

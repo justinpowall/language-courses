@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Worked_Local_Tax_Code__c</fullName>
+    <description>Captures the local tax code used by ADP.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the local tax code used by ADP to process stipends for this position.</inlineHelpText>
+    <label>Worked Local Tax Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Philadelphia Resident - 3901</fullName>
+                <default>false</default>
+                <label>Philadelphia Resident - 3901</label>
+            </value>
+            <value>
+                <fullName>Philadelphia NR - 3912</fullName>
+                <default>false</default>
+                <label>Philadelphia NR - 3912</label>
+            </value>
+            <value>
+                <fullName>Abington TWP - 5145</fullName>
+                <default>false</default>
+                <label>Abington TWP - 5145</label>
+            </value>
+            <value>
+                <fullName>Upper Chichester TWP - 5579</fullName>
+                <default>false</default>
+                <label>Upper Chichester TWP - 5579</label>
+            </value>
+            <value>
+                <fullName>Haverfort - 5641</fullName>
+                <default>false</default>
+                <label>Haverfort - 5641</label>
+            </value>
+            <value>
+                <fullName>Upper Darby - 5658</fullName>
+                <default>false</default>
+                <label>Upper Darby - 5658</label>
+            </value>
+            <value>
+                <fullName>Lower Merion  - 5670</fullName>
+                <default>false</default>
+                <label>Lower Merion  - 5670</label>
+            </value>
+            <value>
+                <fullName>Not Located in PA - 5673</fullName>
+                <default>false</default>
+                <label>Not Located in PA - 5673</label>
+            </value>
+            <value>
+                <fullName>Derry TWP - 7529</fullName>
+                <default>false</default>
+                <label>Derry TWP - 7529</label>
+            </value>
+            <value>
+                <fullName>East Goshen TWP - 7606</fullName>
+                <default>false</default>
+                <label>East Goshen TWP - 7606</label>
+            </value>
+            <value>
+                <fullName>Wayne TWP - 9448</fullName>
+                <default>false</default>
+                <label>Wayne TWP - 9448</label>
+            </value>
+            <value>
+                <fullName>Horsham TWP - 9749</fullName>
+                <default>false</default>
+                <label>Horsham TWP - 9749</label>
+            </value>
+            <value>
+                <fullName>Cheltenham  - 9751</fullName>
+                <default>false</default>
+                <label>Cheltenham  - 9751</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

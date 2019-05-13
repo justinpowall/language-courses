@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Program_Volunteer_Record</fullName>
+    <active>true</active>
+    <description>New Program Volunteer records cannot be created for volunteers who have a Death Date.</description>
+    <errorConditionFormula>AND ( ISNEW(), 
+(NOT( ISBLANK(Volunteer__r.Death_Notification_Date__c))))</errorConditionFormula>
+    <errorDisplayField>Volunteer__c</errorDisplayField>
+    <errorMessage>New Program Volunteer records cannot be created for volunteers who have a Death Date.</errorMessage>
+</ValidationRule>

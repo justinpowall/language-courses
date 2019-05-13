@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EC_Chic_Stipend_Approval</fullName>
+    <columns>Contact__c</columns>
+    <columns>Position__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Actual_End_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Position__c</field>
+        <operation>startsWith</operation>
+        <value>EC-Chic</value>
+    </filters>
+    <filters>
+        <field>Is_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>EC-Chic Stipend Approval</label>
+    <sharedTo>
+        <group>Expense_Approvers_Experience_Corps</group>
+    </sharedTo>
+</ListView>

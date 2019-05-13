@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>Captures status of a reimbursement request.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Current status of this reimbursement or pre-approval request.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+                <label>Not Submitted</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Approved by Program</fullName>
+                <default>false</default>
+                <label>Approved by Program</label>
+            </value>
+            <value>
+                <fullName>Further Action Required</fullName>
+                <default>false</default>
+                <label>Further Action Required</label>
+            </value>
+            <value>
+                <fullName>Scheduled for Payment</fullName>
+                <default>false</default>
+                <label>Scheduled for Payment</label>
+            </value>
+            <value>
+                <fullName>Pending Finance Approval</fullName>
+                <default>false</default>
+                <label>Pending Finance Approval</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

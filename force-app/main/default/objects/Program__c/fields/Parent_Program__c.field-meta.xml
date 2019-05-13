@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Program__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Parent program for this program. Note: Enterprise level programs do not have parent programs.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the parent program for this program record. (NOTE: Enterprise level programs do not have parent programs.)</inlineHelpText>
+    <label>Parent Program</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>Program__c.Enterprise_Level_Program__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Program__c</referenceTo>
+    <relationshipLabel>Sub-Programs</relationshipLabel>
+    <relationshipName>Programs</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

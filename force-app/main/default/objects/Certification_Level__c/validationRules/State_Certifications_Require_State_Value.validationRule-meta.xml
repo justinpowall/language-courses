@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_Certifications_Require_State_Value</fullName>
+    <active>true</active>
+    <description>State Certifications Require State Value(s)</description>
+    <errorConditionFormula>AND( 
+CONTAINS(Certification__r.Name, &quot;State&quot;),
+ Complete__c = TRUE,
+  ISBLANK(State__c)
+)</errorConditionFormula>
+    <errorDisplayField>State__c</errorDisplayField>
+    <errorMessage>State certification requires state selection.</errorMessage>
+</ValidationRule>

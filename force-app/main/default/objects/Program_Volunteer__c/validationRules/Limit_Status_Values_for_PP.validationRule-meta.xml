@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_Status_Values_for_PP</fullName>
+    <active>false</active>
+    <description>Only Prospect, Volunteer, Assignment Ended, and Deceased Statuses are Available to Purpose Prize</description>
+    <errorConditionFormula>AND(
+
+CONTAINS(Program__r.Name, &quot;Purpose Prize&quot;),
+
+OR(
+ISPICKVAL(Status__c , &quot;No Match&quot;),
+ISPICKVAL(Status__c , &quot;Under Consideration&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Only Prospect, Volunteer, Assignment Ended, and Deceased Statuses are Available to Purpose Prize</errorMessage>
+</ValidationRule>

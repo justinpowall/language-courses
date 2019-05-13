@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Year_Course_Goal__c</fullName>
+    <description>Captures Driver Safety course goal for the current year.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the Driver Safety course goal for the current year.</inlineHelpText>
+    <label>Current Year Course Goal</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurance_Start_and_End_Dates</fullName>
+    <active>true</active>
+    <description>Liability Insurance Start Date must be before Liability Insurance End Date.</description>
+    <errorConditionFormula>Liability_Insurance_Start_Date__c  &gt;  Liability_Insurance_End_Date__c</errorConditionFormula>
+    <errorDisplayField>Liability_Insurance_End_Date__c</errorDisplayField>
+    <errorMessage>Liability Insurance End Date cannot before Liability Insurance Start Date.</errorMessage>
+</ValidationRule>

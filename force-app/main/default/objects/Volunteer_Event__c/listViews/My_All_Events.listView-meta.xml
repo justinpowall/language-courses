@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_All_Events</fullName>
+    <columns>OBJECT_ID</columns>
+    <columns>NAME</columns>
+    <columns>Event_Title__c</columns>
+    <columns>Event_Leader__c</columns>
+    <columns>Event_Template__c</columns>
+    <columns>Cvent_Event_Status__c</columns>
+    <columns>Event_Location_Name__c</columns>
+    <columns>Event_Start_Date__c</columns>
+    <columns>Event_Start_Time__c</columns>
+    <columns>Registration_Deadline_Date__c</columns>
+    <columns>Capacity__c</columns>
+    <columns>Seats_Available__c</columns>
+    <columns>Accepted_Invitees__c</columns>
+    <columns>Summary_URL__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Events</label>
+    <language>en_US</language>
+</ListView>

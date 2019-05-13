@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_Flat_Rate_Amount</fullName>
+    <active>false</active>
+    <description>Limits the amount for a flat rate that can be requested by a volunteer.</description>
+    <errorConditionFormula>OR( 
+AND( 
+Expense__r.Assignment__r.Position__r.Program__r.Branding_Descriptor__c = &quot;Driver Safety&quot;, 
+ISPICKVAL(Expense__r.Reimbursement_Type__c , &quot;Flat Rate&quot;), 
+Expense__r.RecordType.Name = &quot;Expense Reimbursement&quot;, 
+Amount__c &lt;&gt; 35, 
+Amount__c &lt;&gt; 25, 
+Amount__c &lt;&gt; 15), 
+AND( 
+Expense__r.Assignment__r.Position__r.Program__r.Branding_Descriptor__c = &quot;Tax-Aide&quot;, 
+ISPICKVAL(Expense__r.Assignment__r.Position__r.Profile_Type__c, &quot;Volunteer&quot;), 
+ISPICKVAL(Expense__r.Reimbursement_Type__c , &quot;Flat Rate&quot;), 
+Expense__r.RecordType.Name = &quot;Expense Reimbursement&quot;, 
+Amount__c &gt; 35), 
+AND( 
+Expense__r.Assignment__r.Position__r.Program__r.Branding_Descriptor__c = &quot;Tax-Aide&quot;, 
+ISPICKVAL(Expense__r.Reimbursement_Type__c , &quot;Flat Rate&quot;), 
+Expense__r.RecordType.Name = &quot;Expense Reimbursement&quot;, Amount__c &gt; 50, 
+OR( ISPICKVAL(Expense__r.Assignment__r.Position__r.Profile_Type__c,&quot;Volunteer Leader - Read Only&quot;), 
+ISPICKVAL(Expense__r.Assignment__r.Position__r.Profile_Type__c, &quot;Volunteer Leader - Edit&quot;), 
+ISPICKVAL(Expense__r.Assignment__r.Position__r.Profile_Type__c, &quot;Volunteer Supervisor - Read Only&quot;), 
+ISPICKVAL(Expense__r.Assignment__r.Position__r.Profile_Type__c, &quot;Volunteer Supervisor - Edit&quot;)) 
+))</errorConditionFormula>
+    <errorMessage>If you are requesting a flat rate reimbursement, you must enter one of the following amounts:  $15, $25, or $35 for a Driver Safety Course, $35 (or less) for a Tax-Aide Assignment, or $50 (or less) for a Tax-Aide Supervisory Assignment.</errorMessage>
+</ValidationRule>

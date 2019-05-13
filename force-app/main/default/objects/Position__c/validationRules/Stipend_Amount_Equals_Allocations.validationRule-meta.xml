@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stipend_Amount_Equals_Allocations</fullName>
+    <active>true</active>
+    <description>Prevents a position from being saved if the full stipend amount does not match the sum of the individual allocations.</description>
+    <errorConditionFormula>ABS(Deduction_Amount__c + BLANKVALUE(Deduction_Amount__c, 0)) + (Rate_1_Amount__c + BLANKVALUE(Rate_1_Amount__c, 0) )
+
+&lt;&gt;
+ABS(BCPS__c +  BLANKVALUE(BCPS__c, 0) + CNCS__c +  BLANKVALUE(CNCS__c, 0) + CPS__c +  BLANKVALUE(CPS__c, 0) +   DCPS__c +  BLANKVALUE(DCPS__c, 0) + DCPNI__c +  BLANKVALUE(DCPNI__c, 0)  + Deerbrook__c +  BLANKVALUE(Deerbrook__c, 0) +  DOJ__c +  BLANKVALUE(DOJ__c, 0) + GOSV__c +  BLANKVALUE(GOSV__c, 0)  +  General__c +  BLANKVALUE(General__c, 0) +  OSI__c +  BLANKVALUE(OSI__c, 0) + PA_Charter_Schools__c + BLANKVALUE(PA_Charter_Schools__c, 0) + PSD__c + BLANKVALUE(PSD__c, 0) + Serve_DC__c +  BLANKVALUE(Serve_DC__c, 0) + Target__c +  BLANKVALUE(Target__c, 0))</errorConditionFormula>
+    <errorMessage>The sum of all grant allocations does not equal the sum of the Rate 1 Amount and Deduction Amount. Please review all allocations as well as the Rate 1 Amount and Deduction Amount to make sure they are correct.</errorMessage>
+</ValidationRule>

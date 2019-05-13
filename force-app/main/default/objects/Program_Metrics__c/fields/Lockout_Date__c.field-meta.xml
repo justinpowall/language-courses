@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lockout_Date__c</fullName>
+    <description>Date field used to lockout unauthorized users from editing program metrics record once this date has been reached.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Only authorized users may edit the record once this date is reached.</inlineHelpText>
+    <label>Lockout Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

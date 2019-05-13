@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candidate_Status_for_TA_DS_and_EC_Only</fullName>
+    <active>true</active>
+    <description>Candidate status available to Tax-Aide, Driver Safety, and Experience Corps programs only.</description>
+    <errorConditionFormula>AND( 
+AND(ISPICKVAL(Status__c , &quot;Candidate&quot;), 
+ NOT(ISCHANGED(User__c))),
+ NOT(CONTAINS(Position__r.Program__r.Branding_Descriptor__c , &quot;Tax-Aide&quot;)) ,
+  NOT(CONTAINS(Position__r.Program__r.Branding_Descriptor__c , &quot;Driver Safety&quot;)) ,
+  NOT(CONTAINS(Position__r.Program__r.Branding_Descriptor__c , &quot;Experience Corps&quot;)))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Candidate status available to Tax-Aide, Driver Safety, and Experience Corps programs only.</errorMessage>
+</ValidationRule>

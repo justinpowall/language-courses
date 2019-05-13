@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dismissal_Reason_Not_for_Driver_Safety</fullName>
+    <active>true</active>
+    <description>Driver Safety must use Driver Safety Dismissal Reason.  All other programs must use Dismissal Reason.</description>
+    <errorConditionFormula>OR(
+ AND(
+     Program__r.Branding_Descriptor__c &lt;&gt; &quot;Driver Safety&quot;,
+     NOT(ISPICKVAL( Driver_Safety_Dismissal_Reason__c, &quot;&quot;))), 
+AND(
+     Program__r.Branding_Descriptor__c = &quot;Driver Safety&quot;,
+     NOT(ISPICKVAL(  Termination_Reason__c , &quot;&quot;)))
+)</errorConditionFormula>
+    <errorMessage>Dismissal reason must be blank if program = Driver Safety, and Driver Safety dismissal reason must be blank if program is not = Driver Safety</errorMessage>
+</ValidationRule>

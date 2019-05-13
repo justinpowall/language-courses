@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadata that decides whether email of a given type are sent out or not.</description>
+    <label>Email Control</label>
+    <pluralLabel>Email Controls</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

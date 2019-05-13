@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_Positions_Driver_Safety</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Profile_Type__c</columns>
+    <columns>Program__c</columns>
+    <columns>Role__c</columns>
+    <columns>State__c</columns>
+    <columns>Expense_Eligible__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Prospect</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>DS-</value>
+    </filters>
+    <label>Prospect Positions - Driver Safety</label>
+    <sharedTo>
+        <role>VTM_Manager</role>
+    </sharedTo>
+</ListView>

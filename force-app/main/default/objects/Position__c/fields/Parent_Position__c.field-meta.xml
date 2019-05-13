@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Position__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Parent position for this position.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the parent position for this position record.</inlineHelpText>
+    <label>Supervisor</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <filterItems>
+            <field>Position__c.Profile_Type__c</field>
+            <operation>equals</operation>
+            <value>Volunteer Supervisor - Read Only</value>
+        </filterItems>
+        <filterItems>
+            <field>Position__c.Profile_Type__c</field>
+            <operation>equals</operation>
+            <value>Staff</value>
+        </filterItems>
+        <filterItems>
+            <field>Position__c.Profile_Type__c</field>
+            <operation>equals</operation>
+            <value>Volunteer Supervisor - Edit</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Position__c</referenceTo>
+    <relationshipLabel>Sub-Positions</relationshipLabel>
+    <relationshipName>Positions</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

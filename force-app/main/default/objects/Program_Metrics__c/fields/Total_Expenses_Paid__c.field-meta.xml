@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Expenses_Paid__c</fullName>
+    <description>Calculated field = sum of all expense data.</description>
+    <externalId>false</externalId>
+    <formula>Meeting_Expenses__c + Salaries__c + Gifts_Donations_Paid__c + Trip_Expenses__c + Sales_Expenses__c + Social_Event_Expenses__c + Administrative_Expenses__c + Program_Expenses__c + Newsletter_Expenses__c + Other_Expenses__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Sum of all expenses paid.</inlineHelpText>
+    <label>Total Expenses Paid</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

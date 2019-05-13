@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_System_Admins_Can_Edit</fullName>
+    <active>true</active>
+    <description>Only System Admins can edit &quot;Position&quot; and &quot;Volunteer&quot; lookup fields.</description>
+    <errorConditionFormula>AND(
+OR (
+ISCHANGED(Position__c ),
+ISCHANGED(Contact__c )) 
+
+&amp;&amp; 
+NOT( $Profile.Name = &#39;System Administrator&#39;))</errorConditionFormula>
+    <errorMessage>&quot;Position&quot; and &quot;Volunteer&quot; are only editable by System Administrators. Please contact your System Administrator if you need to update these fields.</errorMessage>
+</ValidationRule>

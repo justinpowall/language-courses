@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standardization_State__c</fullName>
+    <description>Field is used for standardization process.  All profiles should have read and edit access, but the field should only be on the system administrator layout; users should not actually see the field.</description>
+    <externalId>false</externalId>
+    <label>Standardization State</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Failed</fullName>
+                <default>false</default>
+                <label>Failed</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Not Standardized</fullName>
+                <default>true</default>
+                <label>Not Standardized</label>
+            </value>
+            <value>
+                <fullName>Standardized</fullName>
+                <default>false</default>
+                <label>Standardized</label>
+            </value>
+            <value>
+                <fullName>Migrated</fullName>
+                <default>false</default>
+                <label>Migrated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

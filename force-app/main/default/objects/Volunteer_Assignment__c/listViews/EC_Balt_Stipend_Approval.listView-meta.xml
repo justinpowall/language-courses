@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EC_Balt_Stipend_Approval</fullName>
+    <columns>Contact__c</columns>
+    <columns>Position__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Is_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Position__c</field>
+        <operation>startsWith</operation>
+        <value>EC-Balt</value>
+    </filters>
+    <label>audrey cunningham</label>
+    <sharedTo>
+        <group>Expense_Approvers_Experience_Corps</group>
+    </sharedTo>
+</ListView>

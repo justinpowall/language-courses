@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Month_Beginning_Date__c</fullName>
+    <description>Captures the first of the month for a time entry item. This field is auto-populated through code and is used primarily  for reporting purposes.</description>
+    <externalId>false</externalId>
+    <label>Month Beginning Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

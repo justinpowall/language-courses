@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position_Contact_Phone__c</fullName>
+    <description>Position&#39;s point of contact phone number.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter this position&#39;s point of contact phone number.</inlineHelpText>
+    <label>Position Contact Phone</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Phone</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Positions_PHIL</fullName>
+    <columns>NAME</columns>
+    <columns>Assignment_Duration_in_months__c</columns>
+    <columns>Rate_1_Amount__c</columns>
+    <columns>Deduction_Amount__c</columns>
+    <columns>Full_Stipend_Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>EC-Phil</value>
+    </filters>
+    <filters>
+        <field>Assignment_Duration_in_months__c</field>
+        <operation>lessOrEqual</operation>
+        <value>10</value>
+    </filters>
+    <filters>
+        <field>Full_Stipend_Amount__c</field>
+        <operation>lessOrEqual</operation>
+        <value>300</value>
+    </filters>
+    <label>My Positions PHIL</label>
+    <sharedTo>
+        <group>Experience_Corps_Staff</group>
+    </sharedTo>
+</ListView>

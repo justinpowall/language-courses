@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resume_Request__c</fullName>
+    <externalId>false</externalId>
+    <label>Resume Request</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Resume Not Requested</fullName>
+                <default>true</default>
+                <label>Resume Not Requested</label>
+            </value>
+            <value>
+                <fullName>Resume Optional</fullName>
+                <default>false</default>
+                <label>Resume Optional</label>
+            </value>
+            <value>
+                <fullName>Resume Required</fullName>
+                <default>false</default>
+                <label>Resume Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

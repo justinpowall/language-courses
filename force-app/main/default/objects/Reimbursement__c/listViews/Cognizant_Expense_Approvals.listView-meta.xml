@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cognizant_Expense_Approvals</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>Volunteer__c</columns>
+    <columns>Assignment__c</columns>
+    <columns>Program_Name__c</columns>
+    <columns>Class__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Reimbursement_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Reimbursement_Total__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Class__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Program__c</field>
+        <operation>contains</operation>
+        <value>ADS</value>
+    </filters>
+    <filters>
+        <field>Program__c</field>
+        <operation>contains</operation>
+        <value>Driver Safety</value>
+    </filters>
+    <label>Cognizant Expense Approvals</label>
+    <sharedTo>
+        <role>ADS_Itemized_Approver_Proxy</role>
+    </sharedTo>
+</ListView>

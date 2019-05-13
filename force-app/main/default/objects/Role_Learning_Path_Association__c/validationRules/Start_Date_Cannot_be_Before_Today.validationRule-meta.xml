@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date_Cannot_be_Before_Today</fullName>
+    <active>true</active>
+    <description>Effective Date Start cannot be before Today.</description>
+    <errorConditionFormula>AND(
+ OR( ISCHANGED( Effective_Date_Start__c), ISNEW()), 
+ Effective_Date_Start__c &lt; TODAY() 
+)</errorConditionFormula>
+    <errorDisplayField>Effective_Date_Start__c</errorDisplayField>
+    <errorMessage>Effective Date Start cannot be before Today.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Report_Period_Start_Date__c</fullName>
+    <description>The start date for the reporting period specific to this record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the start date for the reporting period covered in this record.</inlineHelpText>
+    <label>Report Period Start Date</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

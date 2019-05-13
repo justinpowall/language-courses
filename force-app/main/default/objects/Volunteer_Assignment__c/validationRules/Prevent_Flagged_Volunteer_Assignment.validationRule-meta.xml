@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Flagged_Volunteer_Assignment</fullName>
+    <active>true</active>
+    <description>Volunteers who have been red-flagged cannot be assigned.  Red-flag explanation is on volunteer&#39;s contact record.</description>
+    <errorConditionFormula>Contact__r.Red_Flagged__c = TRUE</errorConditionFormula>
+    <errorDisplayField>Contact__c</errorDisplayField>
+    <errorMessage>Volunteers who have been red-flagged cannot be assigned.  Contact staff for guidance.</errorMessage>
+</ValidationRule>

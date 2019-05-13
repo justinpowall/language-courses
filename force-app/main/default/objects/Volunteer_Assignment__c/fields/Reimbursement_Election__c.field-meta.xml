@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reimbursement_Election__c</fullName>
+    <description>Captures a TA volunteer&#39;s flat rate election if they choose not to be reimbursed or if their reimbursement needs to be put on hold.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This value is automatically stored based on a value selected in the flat rate mass approval interface.</inlineHelpText>
+    <label>Reimbursement Election</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Electing No Reimbursement</fullName>
+                <default>false</default>
+                <label>Electing No Reimbursement</label>
+            </value>
+            <value>
+                <fullName>Place on Hold</fullName>
+                <default>false</default>
+                <label>Place on Hold</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

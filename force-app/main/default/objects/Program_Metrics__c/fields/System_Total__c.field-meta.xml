@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_Total__c</fullName>
+    <description>(Total starting balance + total income) - total expenses paid</description>
+    <externalId>false</externalId>
+    <formula>(Total_Starting_Balance__c + Total_Income__c) -  Total_Expenses_Paid__c</formula>
+    <inlineHelpText>Chapter&#39;s system total = (total starting balance + total income) - total expenses paid</inlineHelpText>
+    <label>System Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

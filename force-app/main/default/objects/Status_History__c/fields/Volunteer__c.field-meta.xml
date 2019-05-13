@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volunteer__c</fullName>
+    <description>Name generated from Assignment volunteer or program volunteer record.</description>
+    <externalId>false</externalId>
+    <formula>IF(LEN(Program_Volunteer__c)=0 ,  Volunteer_Assignment__r.Contact__r.Full_Name__c ,   Program_Volunteer__r.Volunteer__r.Full_Name__c  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Name of related volunteer.</inlineHelpText>
+    <label>Volunteer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

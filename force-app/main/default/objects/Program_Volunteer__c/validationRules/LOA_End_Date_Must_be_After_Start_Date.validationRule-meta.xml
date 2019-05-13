@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LOA_End_Date_Must_be_After_Start_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>LOA_Suspension_Start_Date__c  &gt;=  LOA_Suspension_End_Date__c</errorConditionFormula>
+    <errorDisplayField>LOA_Suspension_End_Date__c</errorDisplayField>
+    <errorMessage>LOA/Suspension End Date must be later than the LOA/Suspension Start Date.</errorMessage>
+</ValidationRule>

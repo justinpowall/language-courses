@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assignment_Ended_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Assignment Ended Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Retired</fullName>
+                <default>false</default>
+                <label>Retired</label>
+            </value>
+            <value>
+                <fullName>Leave of Absence</fullName>
+                <default>false</default>
+                <label>Leave of Absence</label>
+            </value>
+            <value>
+                <fullName>Dismissed</fullName>
+                <default>false</default>
+                <label>Dismissed</label>
+            </value>
+            <value>
+                <fullName>Emeritus</fullName>
+                <default>false</default>
+                <label>Emeritus</label>
+            </value>
+            <value>
+                <fullName>Suspended</fullName>
+                <default>false</default>
+                <label>Suspended</label>
+            </value>
+            <value>
+                <fullName>Referred to Another Program</fullName>
+                <default>false</default>
+                <label>Referred to Another Program</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Relocated</fullName>
+                <default>false</default>
+                <label>Relocated</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Assignment Ended</controllingFieldValue>
+            <valueName>Retired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assignment Ended</controllingFieldValue>
+            <valueName>Leave of Absence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assignment Ended</controllingFieldValue>
+            <valueName>Dismissed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assignment Ended</controllingFieldValue>
+            <valueName>Emeritus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assignment Ended</controllingFieldValue>
+            <valueName>Suspended</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assignment Ended</controllingFieldValue>
+            <valueName>Referred to Another Program</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assignment Ended</controllingFieldValue>
+            <valueName>Duplicate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assignment Ended</controllingFieldValue>
+            <valueName>Relocated</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

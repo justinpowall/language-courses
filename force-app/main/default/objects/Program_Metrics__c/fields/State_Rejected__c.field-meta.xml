@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_Rejected__c</fullName>
+    <description>The unique number of state rejected e-files.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The unique number of state rejected e-files.</inlineHelpText>
+    <label>State Rejected</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

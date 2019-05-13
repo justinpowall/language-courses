@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Week_Beginning_Date__c</fullName>
+    <description>Week beginning date on related time entry record.</description>
+    <externalId>false</externalId>
+    <formula>Timecard__r.Week_Beginning_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Week beginning date on related time entry record.</inlineHelpText>
+    <label>Week Beginning Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

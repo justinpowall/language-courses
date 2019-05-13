@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Declined_Reason__c</fullName>
+    <description>Used to capture the reason for declining a volunteer.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the reason that most closely describes why this volunteer was No Match for this position.</inlineHelpText>
+    <label>No Match Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stopped Responding or No Longer Interested</fullName>
+                <default>false</default>
+                <label>Stopped Responding or No Longer Interested</label>
+            </value>
+            <value>
+                <fullName>Failed Background/Reference Check</fullName>
+                <default>false</default>
+                <label>Failed Background/Reference Check</label>
+            </value>
+            <value>
+                <fullName>Did Not Complete/Pass Training or Certification</fullName>
+                <default>false</default>
+                <label>Did Not Complete/Pass Training or Certification</label>
+            </value>
+            <value>
+                <fullName>Poor Communication Skills Displayed During Interview</fullName>
+                <default>false</default>
+                <label>Poor Communication Skills Displayed During Interview</label>
+            </value>
+            <value>
+                <fullName>Not Interested without Compensation</fullName>
+                <default>false</default>
+                <label>Not Interested without Compensation</label>
+            </value>
+            <value>
+                <fullName>Does Not Meet Age Requirement</fullName>
+                <default>false</default>
+                <label>Does Not Meet Age Requirement</label>
+            </value>
+            <value>
+                <fullName>No Position Currently Available</fullName>
+                <default>false</default>
+                <label>No Position Currently Available</label>
+            </value>
+            <value>
+                <fullName>Lacked Access to Technology</fullName>
+                <default>false</default>
+                <label>Lacked Access to Technology</label>
+            </value>
+            <value>
+                <fullName>Skills/Experience Do Not Match Volunteer Role</fullName>
+                <default>false</default>
+                <label>Skills/Experience Do Not Match Volunteer Role</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>Stopped Responding or No Longer Interested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>Failed Background/Reference Check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>Did Not Complete/Pass Training or Certification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>Poor Communication Skills Displayed During Interview</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>Not Interested without Compensation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>Does Not Meet Age Requirement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>No Position Currently Available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>Lacked Access to Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>Skills/Experience Do Not Match Volunteer Role</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Match</controllingFieldValue>
+            <valueName>Duplicate</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

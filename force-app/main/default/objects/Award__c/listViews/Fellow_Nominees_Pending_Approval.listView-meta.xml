@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fellow_Nominees_Pending_Approval</fullName>
+    <columns>NAME</columns>
+    <columns>Award_Name__c</columns>
+    <columns>Contact__c</columns>
+    <columns>Shipping_State_Territory__c</columns>
+    <columns>Status__c</columns>
+    <columns>Received_By_Date__c</columns>
+    <columns>SC_Name__c</columns>
+    <columns>RC_Name__c</columns>
+    <columns>AND_Name__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Award_Name__c</field>
+        <operation>equals</operation>
+        <value>AARP Foundation Tax-Aide Fellow</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pending SC Approval,Pending RC Approval,Pending AND Approval</value>
+    </filters>
+    <label>Fellow Nominees Pending Approval</label>
+    <sharedTo>
+        <group>Tax_Aide_RC</group>
+        <group>Tax_Aide_SC</group>
+        <role>Tax_Aide_National_Staff</role>
+    </sharedTo>
+</ListView>

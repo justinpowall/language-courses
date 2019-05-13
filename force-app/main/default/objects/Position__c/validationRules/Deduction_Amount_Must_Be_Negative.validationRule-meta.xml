@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deduction_Amount_Must_Be_Negative</fullName>
+    <active>true</active>
+    <description>Requires deduction amount to be a negative value.</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK( Deduction_Amount__c )),
+ Deduction_Amount__c &gt;0
+)</errorConditionFormula>
+    <errorMessage>Deduction amount must be a negative value in order to be processed properly.</errorMessage>
+</ValidationRule>

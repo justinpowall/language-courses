@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Certification__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Related annual certification record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Related annual certification record.</inlineHelpText>
+    <label>Annual Certification</label>
+    <referenceTo>Annual_Certification__c</referenceTo>
+    <relationshipLabel>Certification Levels</relationshipLabel>
+    <relationshipName>Required_Certifications</relationshipName>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

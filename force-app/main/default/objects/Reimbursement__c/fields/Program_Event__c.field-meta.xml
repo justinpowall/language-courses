@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Event__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>This is lookup field to the Program Event object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In this field, search for and select the Program Event that is associated with this expense request.</inlineHelpText>
+    <label>Program Event</label>
+    <referenceTo>Program_Event__c</referenceTo>
+    <relationshipLabel>Reimbursements</relationshipLabel>
+    <relationshipName>Expenses</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

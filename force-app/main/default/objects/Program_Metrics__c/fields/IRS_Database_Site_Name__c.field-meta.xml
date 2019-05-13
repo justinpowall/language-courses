@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IRS_Database_Site_Name__c</fullName>
+    <description>Site Name used to order TaxWise software. Data is taken from software orders or software swaps.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Site Name used to order TaxWise software. Data is taken from software orders or software swaps.</inlineHelpText>
+    <label>IRS Database Site Name</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

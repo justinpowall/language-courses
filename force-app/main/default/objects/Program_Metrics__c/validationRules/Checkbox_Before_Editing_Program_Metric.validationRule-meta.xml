@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checkbox_Before_Editing_Program_Metric</fullName>
+    <active>true</active>
+    <description>Volunteers and Volunteer Leaders must verify they have read the alert message before editing a Chapter Program Metric.</description>
+    <errorConditionFormula>AND(NOT(ISNEW()),
+(Please_verify_Chapter_Name_and_Number__c=False),
+ RecordType.DeveloperName = &#39;Chapters Program Metrics&#39;
+)</errorConditionFormula>
+    <errorDisplayField>Please_verify_Chapter_Name_and_Number__c</errorDisplayField>
+    <errorMessage>Please confirm that you have selected the correct Chapter Program above by checking this box.</errorMessage>
+</ValidationRule>

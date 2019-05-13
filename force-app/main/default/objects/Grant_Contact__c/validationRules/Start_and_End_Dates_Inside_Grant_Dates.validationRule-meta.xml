@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_and_End_Dates_Inside_Grant_Dates</fullName>
+    <active>false</active>
+    <description>Prevents Grant Contract from being set to dates outside of the active dates of a Grant.</description>
+    <errorConditionFormula>OR(
+Start_Date__c &lt;  Grant__r.Start_Date__c ,
+End_Date__c &gt;  Grant__r.End_Date__c 
+)</errorConditionFormula>
+    <errorMessage>The Grant Contact start date must be on or after the related Grant&#39;s start date. Additionally, The Grant Contact end date must be on or before the related Grant&#39;s end date.</errorMessage>
+</ValidationRule>

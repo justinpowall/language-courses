@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opt_In_To_Receive_Additional_Services__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>This field is to capture taxpayers that have agreed to receive marketing material about AARP Foundation products and services.</description>
+    <externalId>false</externalId>
+    <label>Opt In To Receive Additional Services</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

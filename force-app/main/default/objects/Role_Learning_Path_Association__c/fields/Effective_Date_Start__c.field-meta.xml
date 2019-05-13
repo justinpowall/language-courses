@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effective_Date_Start__c</fullName>
+    <defaultValue>TODAY()</defaultValue>
+    <description>Learning Path is auto-assigned on or after this date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date that the learning path auto-assigning starts.</inlineHelpText>
+    <label>Effective Date Start</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

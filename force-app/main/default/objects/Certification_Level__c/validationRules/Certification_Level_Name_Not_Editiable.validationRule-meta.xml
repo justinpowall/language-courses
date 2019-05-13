@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_Level_Name_Not_Editiable</fullName>
+    <active>true</active>
+    <description>Only system and delegated administrators can edit certification name.</description>
+    <errorConditionFormula>AND(
+NOT (ISNEW()),
+ISCHANGED(Certification__c)
+)</errorConditionFormula>
+    <errorDisplayField>Certification__c</errorDisplayField>
+    <errorMessage>The related certification cannot be changed to a different certification.</errorMessage>
+</ValidationRule>

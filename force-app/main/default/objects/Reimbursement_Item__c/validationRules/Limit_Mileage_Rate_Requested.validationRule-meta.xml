@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_Mileage_Rate_Requested</fullName>
+    <active>false</active>
+    <description>Prevents a volunteer from requesting a mileage rate that is greater than the maximum allowed mileage rate.</description>
+    <errorConditionFormula>Mileage_Rate__c &gt; 0.575</errorConditionFormula>
+    <errorMessage>Mileage rate cannot exceed $0.575. Please enter a mileage rate that is less than or equal to $0.575.</errorMessage>
+</ValidationRule>

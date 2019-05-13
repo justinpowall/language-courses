@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Approval_Required__c</fullName>
+    <description>Is time approval required and if so, how many levels of approval are required?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is time approval required and if so, how many levels of approval are required?</inlineHelpText>
+    <label>Time Approval Required</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Time_Entry_Tracking__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No -  0 Levels of Approval Required</fullName>
+                <default>true</default>
+                <label>No -  0 Levels of Approval Required</label>
+            </value>
+            <value>
+                <fullName>Yes - 1 Level of Approval Required</fullName>
+                <default>false</default>
+                <label>Yes - 1 Level of Approval Required</label>
+            </value>
+            <value>
+                <fullName>Yes - 2 Levels of Approval Required</fullName>
+                <default>false</default>
+                <label>Yes - 2 Levels of Approval Required</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>No -  0 Levels of Approval Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Yes - 1 Level of Approval Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Yes - 2 Levels of Approval Required</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

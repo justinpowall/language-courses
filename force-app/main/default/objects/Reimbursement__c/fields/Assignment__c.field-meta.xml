@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assignment__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>This is a lookup field for the assignment object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In this field, search for and select the assignment that is associated with this expense request.  Only assignments that are expense eligible are included in lookup search.</inlineHelpText>
+    <label>Assignment</label>
+    <lookupFilter>
+        <active>false</active>
+        <booleanFilter>(1 AND 2 AND 3) OR (1 AND 4) OR (1 AND 5) OR (6 AND (1 OR 9)) OR (1 AND 7 AND 8)</booleanFilter>
+        <errorMessage>Assignment does not exist or is not eligible for expense reimbursement.</errorMessage>
+        <filterItems>
+            <field>Volunteer_Assignment__c.Is_Expense_Eligible__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>$Profile.Name</field>
+            <operation>equals</operation>
+            <value>Tax-Aide Volunteer Leader - LMS Admin, Tax-Aide Volunteer Leader - Read Only - LMS Admin</value>
+        </filterItems>
+        <filterItems>
+            <field>Volunteer_Assignment__c.Position__r.Name</field>
+            <operation>startsWith</operation>
+            <value>TA</value>
+        </filterItems>
+        <filterItems>
+            <field>$Profile.Name</field>
+            <operation>contains</operation>
+            <value>Staff</value>
+        </filterItems>
+        <filterItems>
+            <field>Volunteer_Assignment__c.Contact__r.Id</field>
+            <operation>equals</operation>
+            <valueField>$User.ContactId</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Profile.Name</field>
+            <operation>equals</operation>
+            <value>System Administrator, System Integrator</value>
+        </filterItems>
+        <filterItems>
+            <field>$Profile.Name</field>
+            <operation>equals</operation>
+            <value>States Volunteer Leader - LMS Admin</value>
+        </filterItems>
+        <filterItems>
+            <field>Volunteer_Assignment__c.Position__r.Name</field>
+            <operation>startsWith</operation>
+            <value>ST</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Status__c</field>
+            <operation>equals</operation>
+            <value>Scheduled for Payment, Pending Finance Approval</value>
+        </filterItems>
+        <infoMessage>In order to search for your assignments, type AS* in the search bar and press Go.
+
+Note: Only assignments that are expense eligible are included in lookup search.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Volunteer_Assignment__c</referenceTo>
+    <relationshipLabel>Reimbursements</relationshipLabel>
+    <relationshipName>Expense</relationshipName>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

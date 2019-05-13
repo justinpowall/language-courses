@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pay_Monthly_Stipend</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (Pay_Monthly_Stipend__c = True, Position__r.Full_Stipend_Amount__c = 0)</errorConditionFormula>
+    <errorMessage>In order to pay monthly stipend the full stipend amount on the position associated with this assignment must have a value greater than zero.</errorMessage>
+</ValidationRule>

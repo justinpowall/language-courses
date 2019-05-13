@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Just_A_Person</fullName>
+    <columns>NAME</columns>
+    <columns>Integration_Partner__c</columns>
+    <columns>Service__c</columns>
+    <columns>Status__c</columns>
+    <columns>Traffic_Flow__c</columns>
+    <columns>Request__c</columns>
+    <columns>Return_Message__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Service__c</field>
+        <operation>equals</operation>
+        <value>Create Just a Person</value>
+    </filters>
+    <label>Create Just A Person</label>
+    <sharedTo>
+        <role>VTM_Manager</role>
+    </sharedTo>
+</ListView>

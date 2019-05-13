@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Full_Class_notifications__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>By this setting you can enable/disable  &quot;Full Class notifications&quot; from Notifications Trigger</description>
+    <externalId>false</externalId>
+    <inlineHelpText>By this setting you can enable/disable  &quot;Full Class notifications&quot; from Notifications Trigger</inlineHelpText>
+    <label>Disable &quot;Full Class notifications&quot;</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

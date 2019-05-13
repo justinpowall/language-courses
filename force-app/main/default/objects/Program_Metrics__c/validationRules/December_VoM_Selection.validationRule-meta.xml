@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>December_VoM_Selection</fullName>
+    <active>true</active>
+    <description>Restricts December VoM selection by a State Coordinator (ADS Program Metric Edit permission set user) to the December Report Period (December 11 to January 10 of the following calendar year) on Driver Safety record types.</description>
+    <errorConditionFormula>AND( 
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;System Integrator&quot;, 
+$Profile.Name &lt;&gt; &quot;Driver Safety Staff - LMS Admin&quot;, 
+ISCHANGED( Dec__c ), 
+NOT(AND( 
+YEAR ( TODAY() ) == YEAR ( Report_Period_Start_Date__c ), 
+YEAR ( TODAY() ) == YEAR ( Report_Period_End_Date__c ), 
+AND( 
+(TODAY() &gt; DATE(YEAR ( Report_Period_End_Date__c ), 12, 11)), 
+(TODAY() &lt; DATE(YEAR ( Report_Period_End_Date__c ) + 1, 1, 10)) 
+)) 
+) 
+)</errorConditionFormula>
+    <errorMessage>You can select a December Volunteer of the Month only between December 11 of the Report Period calendar year to January 10 of the next year.</errorMessage>
+</ValidationRule>

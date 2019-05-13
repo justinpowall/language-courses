@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Source__c</fullName>
+    <description>The referral source through which a volunteer was introduced to a particular AARP volunteer program.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How did the prospect or volunteer hear about this volunteer program?</inlineHelpText>
+    <label>Referral Source</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AARP.org</fullName>
+                <default>false</default>
+                <label>AARP.org</label>
+            </value>
+            <value>
+                <fullName>AARP Authorized to Offer Agent</fullName>
+                <default>false</default>
+                <label>AARP Authorized to Offer Agent</label>
+            </value>
+            <value>
+                <fullName>AARP Bulletin</fullName>
+                <default>false</default>
+                <label>AARP Bulletin</label>
+            </value>
+            <value>
+                <fullName>AARP Eblast</fullName>
+                <default>false</default>
+                <label>AARP Eblast</label>
+            </value>
+            <value>
+                <fullName>AARPFoundation.org</fullName>
+                <default>false</default>
+                <label>AARPFoundation.org</label>
+            </value>
+            <value>
+                <fullName>AARP Social Media</fullName>
+                <default>false</default>
+                <label>AARP Social Media</label>
+            </value>
+            <value>
+                <fullName>AARP Staff</fullName>
+                <default>false</default>
+                <label>AARP Staff</label>
+            </value>
+            <value>
+                <fullName>AARP State Office</fullName>
+                <default>false</default>
+                <label>AARP State Office</label>
+            </value>
+            <value>
+                <fullName>AARP State Organization</fullName>
+                <default>false</default>
+                <label>AARP State Organization</label>
+            </value>
+            <value>
+                <fullName>AARP Tax-Aide Volunteer</fullName>
+                <default>false</default>
+                <label>AARP Tax-Aide Volunteer</label>
+            </value>
+            <value>
+                <fullName>AARP The Magazine</fullName>
+                <default>false</default>
+                <label>AARP The Magazine</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>African-American Media</fullName>
+                <default>false</default>
+                <label>African-American Media</label>
+            </value>
+            <value>
+                <fullName>Agency Website</fullName>
+                <default>false</default>
+                <label>Agency Website</label>
+            </value>
+            <value>
+                <fullName>Another AARP Volunteer</fullName>
+                <default>false</default>
+                <label>Another AARP Volunteer</label>
+            </value>
+            <value>
+                <fullName>ASCEND</fullName>
+                <default>false</default>
+                <label>ASCEND</label>
+            </value>
+            <value>
+                <fullName>Asian-American/Pacific Islander Media</fullName>
+                <default>false</default>
+                <label>Asian-American/Pacific Islander Media</label>
+            </value>
+            <value>
+                <fullName>Attended an AARP Driver Safety Course</fullName>
+                <default>false</default>
+                <label>Attended an AARP Driver Safety Course</label>
+            </value>
+            <value>
+                <fullName>Colleges and Universities Lifelong Learning</fullName>
+                <default>false</default>
+                <label>Colleges and Universities Lifelong Learning</label>
+            </value>
+            <value>
+                <fullName>Craigslist</fullName>
+                <default>false</default>
+                <label>Craigslist</label>
+            </value>
+            <value>
+                <fullName>Create the Good</fullName>
+                <default>false</default>
+                <label>Create the Good</label>
+            </value>
+            <value>
+                <fullName>Cuban National Council (CNC)</fullName>
+                <default>false</default>
+                <label>Cuban National Council (CNC)</label>
+            </value>
+            <value>
+                <fullName>Eblast from paid media source</fullName>
+                <default>false</default>
+                <label>Eblast from paid media source</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>Florida International University</fullName>
+                <default>false</default>
+                <label>Florida International University</label>
+            </value>
+            <value>
+                <fullName>Google Ad/Internet</fullName>
+                <default>false</default>
+                <label>Google Ad/Internet</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Hispanic/Latino Media</fullName>
+                <default>false</default>
+                <label>Hispanic/Latino Media</label>
+            </value>
+            <value>
+                <fullName>Hispanic/Latino Organization</fullName>
+                <default>false</default>
+                <label>Hispanic/Latino Organization</label>
+            </value>
+            <value>
+                <fullName>Hispanic Alliance For Career Enhancement</fullName>
+                <default>false</default>
+                <label>Hispanic Alliance For Career Enhancement</label>
+            </value>
+            <value>
+                <fullName>Hispanic Assoc. Colleges &amp; Universities</fullName>
+                <default>false</default>
+                <label>Hispanic Assoc. Colleges &amp; Universities</label>
+            </value>
+            <value>
+                <fullName>Hispanic Organization (LULAC)</fullName>
+                <default>false</default>
+                <label>Hispanic Organization (LULAC)</label>
+            </value>
+            <value>
+                <fullName>Idealist.com</fullName>
+                <default>false</default>
+                <label>Idealist.com</label>
+            </value>
+            <value>
+                <fullName>IRS/SPEC</fullName>
+                <default>false</default>
+                <label>IRS/SPEC</label>
+            </value>
+            <value>
+                <fullName>Korean Community Service Center</fullName>
+                <default>false</default>
+                <label>Korean Community Service Center</label>
+            </value>
+            <value>
+                <fullName>Mail</fullName>
+                <default>false</default>
+                <label>Mail</label>
+            </value>
+            <value>
+                <fullName>National Assoc. for Equal Opportunity</fullName>
+                <default>false</default>
+                <label>National Assoc. for Equal Opportunity</label>
+            </value>
+            <value>
+                <fullName>National Assoc. of Black Accountants</fullName>
+                <default>false</default>
+                <label>National Assoc. of Black Accountants</label>
+            </value>
+            <value>
+                <fullName>National Hispanic Christian Leadership</fullName>
+                <default>false</default>
+                <label>National Hispanic Christian Leadership</label>
+            </value>
+            <value>
+                <fullName>Newspaper</fullName>
+                <default>false</default>
+                <label>Newspaper</label>
+            </value>
+            <value>
+                <fullName>Options</fullName>
+                <default>false</default>
+                <label>Options</label>
+            </value>
+            <value>
+                <fullName>Organization for Chinese Americans</fullName>
+                <default>false</default>
+                <label>Organization for Chinese Americans</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other AARP Volunteer</fullName>
+                <default>false</default>
+                <label>Other AARP Volunteer</label>
+            </value>
+            <value>
+                <fullName>Other Social Media</fullName>
+                <default>false</default>
+                <label>Other Social Media</label>
+            </value>
+            <value>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+                <label>Phone Call</label>
+            </value>
+            <value>
+                <fullName>Place of Worship</fullName>
+                <default>false</default>
+                <label>Place of Worship</label>
+            </value>
+            <value>
+                <fullName>Postcard/Flyer/Billboard</fullName>
+                <default>false</default>
+                <label>Postcard/Flyer/Billboard</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Referred by AARP Volunteer/Staff</fullName>
+                <default>false</default>
+                <label>Referred by AARP Volunteer/Staff</label>
+            </value>
+            <value>
+                <fullName>Referred by Friend/Family</fullName>
+                <default>false</default>
+                <label>Referred by Friend/Family</label>
+            </value>
+            <value>
+                <fullName>Referred by Partner Organization</fullName>
+                <default>false</default>
+                <label>Referred by Partner Organization</label>
+            </value>
+            <value>
+                <fullName>Retirement Associations</fullName>
+                <default>false</default>
+                <label>Retirement Associations</label>
+            </value>
+            <value>
+                <fullName>SER Jobs for Progress</fullName>
+                <default>false</default>
+                <label>SER Jobs for Progress</label>
+            </value>
+            <value>
+                <fullName>Social Media (Facebook,Twitter)</fullName>
+                <default>false</default>
+                <label>Social Media (Facebook,Twitter)</label>
+            </value>
+            <value>
+                <fullName>TV</fullName>
+                <default>false</default>
+                <label>TV</label>
+            </value>
+            <value>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+                <label>Twitter</label>
+            </value>
+            <value>
+                <fullName>Used the Service as a Client</fullName>
+                <default>false</default>
+                <label>Used the Service as a Client</label>
+            </value>
+            <value>
+                <fullName>Volunteer Center of SF and San Mateo County</fullName>
+                <default>false</default>
+                <label>Volunteer Center of SF and San Mateo County</label>
+            </value>
+            <value>
+                <fullName>Volunteer Center of the East Bay</fullName>
+                <default>false</default>
+                <label>Volunteer Center of the East Bay</label>
+            </value>
+            <value>
+                <fullName>Volunteer Match</fullName>
+                <default>false</default>
+                <label>Volunteer Match</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

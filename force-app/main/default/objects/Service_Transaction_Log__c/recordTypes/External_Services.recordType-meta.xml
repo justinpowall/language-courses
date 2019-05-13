@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Services</fullName>
+    <active>true</active>
+    <description>Record type for logging external services</description>
+    <label>External Services</label>
+    <picklistValues>
+        <picklist>Integration_Partner__c</picklist>
+        <values>
+            <fullName>AAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RRD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service__c</picklist>
+        <values>
+            <fullName>Address Standardization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create Just a Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create Volunteer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Get Volunteer Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Login</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member Person Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Authorization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Person Record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Person or Non-Person</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Traffic_Flow__c</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

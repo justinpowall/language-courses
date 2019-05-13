@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State__c</fullName>
+    <description>Chapter program state value from related program record.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Program__r.Legal_Incorporation_State__c)</formula>
+    <inlineHelpText>State where this chapter is located.</inlineHelpText>
+    <label>State</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

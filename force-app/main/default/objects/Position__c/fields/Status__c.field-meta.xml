@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>To post a position for recruitment, select &quot;Posted&quot; and to remove it, select &quot;Unposted.&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To post a position for recruitment, select &quot;Posted&quot; and to remove it, select &quot;Unposted.&quot;</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Posted</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Unposted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

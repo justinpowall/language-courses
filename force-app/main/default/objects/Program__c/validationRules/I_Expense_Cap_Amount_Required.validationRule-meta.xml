@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_Expense_Cap_Amount_Required</fullName>
+    <active>true</active>
+    <description>Split-state programs require an annual cap amount for I-Expenses (counseling activity).</description>
+    <errorConditionFormula>AND(
+ Split_State_Level_Program__c = TRUE,
+ ISBLANK(I_Expenses_Cap_Amount__c)
+)</errorConditionFormula>
+    <errorDisplayField>I_Expenses_Cap_Amount__c</errorDisplayField>
+    <errorMessage>Split-state programs require an annual cap amount for I-Expenses (counseling activity).</errorMessage>
+</ValidationRule>

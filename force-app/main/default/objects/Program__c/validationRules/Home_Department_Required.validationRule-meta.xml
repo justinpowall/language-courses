@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Home_Department_Required</fullName>
+    <active>true</active>
+    <description>The Home Department field is required if the Branding Descriptor is Experience Corps and the Program field contains values EC-DC, EC-Phil, EC-Chic or EC- Balt</description>
+    <errorConditionFormula>AND( 
+OR(
+CONTAINS(Name,&#39;EC-DC&#39;), 
+CONTAINS(Name, &#39;EC-Phil&#39;),
+CONTAINS(Name, &#39;EC-Chic&#39; ),
+CONTAINS(Name,&#39;EC-Balt&#39;)),   
+CONTAINS(Branding_Descriptor__c ,&#39;Experience Corps&#39;),
+ISBLANK(TEXT(Home_Department__c) )
+)</errorConditionFormula>
+    <errorMessage>If you are creating a program record for EC-DC, EC-Phil, EC-Chic or EC- Balt, you must select a value for the Home Department field.</errorMessage>
+</ValidationRule>

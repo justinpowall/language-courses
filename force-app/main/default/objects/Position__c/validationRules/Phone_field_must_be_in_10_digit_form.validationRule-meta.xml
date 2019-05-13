@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_field_must_be_in_10_digit_form</fullName>
+    <active>true</active>
+    <description>Position_Contact_Phone__c field must be in 10 digit format.</description>
+    <errorConditionFormula>AND( 
+NOT(REGEX(Position_Contact_Phone__c, &quot;\\D*?(\\d\\D*?){10}&quot;)), 
+NOT(ISBLANK(Position_Contact_Phone__c)) 
+)</errorConditionFormula>
+    <errorDisplayField>Position_Contact_Phone__c</errorDisplayField>
+    <errorMessage>US phone numbers should be in this format: (999) 999-9999.</errorMessage>
+</ValidationRule>

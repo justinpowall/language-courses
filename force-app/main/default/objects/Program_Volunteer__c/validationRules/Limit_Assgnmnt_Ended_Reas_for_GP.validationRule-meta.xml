@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_Assgnmnt_Ended_Reas_for_GP</fullName>
+    <active>true</active>
+    <description>Assignment Ended Reason is not available for your program.</description>
+    <errorConditionFormula>AND( 
+
+CONTAINS(Program__r.Name, &quot;General Program&quot;),
+ISPICKVAL(Status__c, &quot;Assignment Ended&quot;),
+NOT(ISBLANK(TEXT(Assignment_Ended_Reason__c)))
+
+)</errorConditionFormula>
+    <errorDisplayField>Assignment_Ended_Reason__c</errorDisplayField>
+    <errorMessage>Assignment Ended Reason is not available for your program.</errorMessage>
+</ValidationRule>

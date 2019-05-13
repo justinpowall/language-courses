@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zip_Code_Must_be_5_Digits</fullName>
+    <active>true</active>
+    <description>Zip Code Must be 5-Digit</description>
+    <errorConditionFormula>AND(ISNUMBER( Name ),
+NOT(REGEX(Name, &quot;\\d{5}?&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Zip code must be a 5-digit numeric value.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Driver_Safety_States</fullName>
+    <columns>NAME</columns>
+    <columns>Parent_Program__c</columns>
+    <columns>Parent_Short_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>ds</value>
+    </filters>
+    <filters>
+        <field>Parent_Short_Name__c</field>
+        <operation>equals</operation>
+        <value>driver safety</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>,a2o,cm</value>
+    </filters>
+    <label>Driver Safety - List of States</label>
+    <sharedTo>
+        <group>Driver_Safety_Staff</group>
+    </sharedTo>
+</ListView>

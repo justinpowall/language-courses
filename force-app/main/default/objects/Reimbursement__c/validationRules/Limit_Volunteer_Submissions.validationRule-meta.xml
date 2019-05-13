@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_Volunteer_Submissions</fullName>
+    <active>true</active>
+    <description>Limits volunteers to only submitting expenses for themselves, not other volunteers.</description>
+    <errorConditionFormula>AND(
+  $User.ContactId &lt;&gt; Null,
+  $User.ContactId &lt;&gt;  Assignment__r.Contact__r.Id,
+  $Profile.Name &lt;&gt; &quot;Tax-Aide Volunteer Leader - LMS Admin&quot;,
+  $Profile.Name &lt;&gt; &quot;States Volunteer Leader - LMS Admin&quot;,
+  $Profile.Name &lt;&gt; &quot;Tax-Aide Volunteer Leader - Read Only - LMS Admin&quot;,
+  $Profile.Name &lt;&gt; &quot;Foundation Staff - LMS Admin&quot;
+)</errorConditionFormula>
+    <errorMessage>You cannot submit a reimbursement on behalf of another volunteer. Please make sure the assignment for which you are submitting is your own.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_Staff_Can_Edit_After_Lockout_Date</fullName>
+    <active>true</active>
+    <description>Only Tax-Aide staff can edit annual certification records on or after lockout date.</description>
+    <errorConditionFormula>AND(
+TODAY() &gt;=  Lockout__c ,
+NOT(CONTAINS($Profile.Name, &quot;Tax-Aide Staff&quot;)),
+NOT(CONTAINS($Profile.Name, &quot;System Administrator&quot;)),
+NOT(CONTAINS($Profile.Name, &quot;System Integrator&quot;))
+)</errorConditionFormula>
+    <errorMessage>Only authorized users can edit annual certification records on or after lockout date.  Please contact an AARP staff-person for assistance.</errorMessage>
+</ValidationRule>

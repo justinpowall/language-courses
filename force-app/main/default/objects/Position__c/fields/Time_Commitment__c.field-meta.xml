@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Commitment__c</fullName>
+    <description>Time commitment for this position.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the expected time commitment for this position?</inlineHelpText>
+    <label>Time Commitment</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

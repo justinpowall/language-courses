@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Associated_Grant__c</fullName>
+    <description>Captures any IRS grants associated with a location.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the grant associated with this location. If there is no grant associated with this location, leave this field blank.</inlineHelpText>
+    <label>Associated Grant</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TCE</fullName>
+                <default>false</default>
+                <label>TCE</label>
+            </value>
+            <value>
+                <fullName>VITA</fullName>
+                <default>false</default>
+                <label>VITA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

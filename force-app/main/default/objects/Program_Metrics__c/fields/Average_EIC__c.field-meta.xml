@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Average_EIC__c</fullName>
+    <description>Average EIC of accepted returns.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Average EIC of accepted returns.</inlineHelpText>
+    <label>Average EIC</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

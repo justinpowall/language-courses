@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milage_Amount_Blank_if_Flat_Rate</fullName>
+    <active>true</active>
+    <description>Milage Amount must be blank id Reimbursement Type is a Flat Rate</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Expense__r.Reimbursement_Type__c , &#39;Flat Rate&#39;), 
+Mileage_Amount__c  &lt;&gt; 0)</errorConditionFormula>
+    <errorMessage>If you are requesting a flat rate reimbursement, you can not enter values for Miles or Mileage Rate. If you would like to request mileage, please make your reimbursement itemized.</errorMessage>
+</ValidationRule>

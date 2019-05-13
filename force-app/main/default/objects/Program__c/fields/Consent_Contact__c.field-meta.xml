@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consent_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>AARP may occasionally disclose/publish contact information for AARP Chapter Presidents in order to allow interested persons to contact local AARP Chapters.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Person that has provided AARP consent to disclose his/her contact information to persons interested in contacting this chapter.</inlineHelpText>
+    <label>Consent Contact</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Programs</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NY_Pend_Part_Done1</fullName>
+    <columns>NAME</columns>
+    <columns>Error_Type__c</columns>
+    <columns>Course__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Sent_To_IDS_Date__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Error_Type__c</field>
+        <operation>equals</operation>
+        <value>Address,Konnex,Invalid Input,Unknown Error</value>
+    </filters>
+    <filters>
+        <field>State__c</field>
+        <operation>equals</operation>
+        <value>NY</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Completed,Manual</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>11/16/2017 12:00 AM</value>
+    </filters>
+    <label>NY Pend Part - Done on 11/16</label>
+    <language>en_US</language>
+</ListView>

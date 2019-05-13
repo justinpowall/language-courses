@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enterprise_Level_Programs_Read_Only</fullName>
+    <active>true</active>
+    <description>Only system administrators can edit programs with Enterprise Level Programs = True.</description>
+    <errorConditionFormula>AND(
+Enterprise_Level_Program__c = TRUE,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;System Integrator&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Enterprise_Level_Program__c</errorDisplayField>
+    <errorMessage>Only system administrators can edit Enterprise Level Programs.  Please contact your system administrator for any changes needed on this record.</errorMessage>
+</ValidationRule>

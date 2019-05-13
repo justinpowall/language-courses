@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Worked_State_Tax_Code_if_EC</fullName>
+    <active>false</active>
+    <description>Require Worked State Tax Code if program = EC</description>
+    <errorConditionFormula>AND (( CONTAINS(  Program__r.Branding_Descriptor__c, &quot;Experience Corps&quot;)), ISBLANK( Worked_State_Tax_Code__c ))</errorConditionFormula>
+    <errorMessage>Please set a Worked State Tax Code</errorMessage>
+</ValidationRule>

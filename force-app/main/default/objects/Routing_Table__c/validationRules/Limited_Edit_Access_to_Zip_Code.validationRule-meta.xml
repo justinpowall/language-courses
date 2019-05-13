@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limited_Edit_Access_to_Zip_Code</fullName>
+    <active>true</active>
+    <description>Only System Administrators can edit zip code field.</description>
+    <errorConditionFormula>AND($Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;System Integrator&quot;,  
+(ISCHANGED(  Name  )))</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Zip codes can only be edited by system administrators. Please contact a system administrator if you need to edit this field.</errorMessage>
+</ValidationRule>

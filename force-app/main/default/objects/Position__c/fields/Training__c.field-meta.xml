@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training__c</fullName>
+    <description>Training requirements for position.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What training is required/provided for this position?</inlineHelpText>
+    <label>Training</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

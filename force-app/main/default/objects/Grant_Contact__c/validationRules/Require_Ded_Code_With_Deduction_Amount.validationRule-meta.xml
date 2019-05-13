@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Ded_Code_With_Deduction_Amount</fullName>
+    <active>false</active>
+    <description>Requires a deduction code with a deduction amount and vice versa.</description>
+    <errorConditionFormula>OR(
+AND(
+ Deduction_Amount__c &lt;0,
+ISPICKVAL( Deduction_Code__c , &quot;&quot;)),
+AND(
+ Deduction_Amount__c = 0,
+NOT(ISBLANK(TEXT( Deduction_Code__c ))))
+)</errorConditionFormula>
+    <errorMessage>If you enter a Deduction Amount, you must select a Deduction Code. If you are not entering a Deduction Amount, do not select a Deduction Code.</errorMessage>
+</ValidationRule>

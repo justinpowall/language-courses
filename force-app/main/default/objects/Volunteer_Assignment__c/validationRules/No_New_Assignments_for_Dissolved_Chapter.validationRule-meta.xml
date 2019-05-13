@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_New_Assignments_for_Dissolved_Chapter</fullName>
+    <active>true</active>
+    <description>Preventing new Volunteer Assignments from being created for Chapter Programs whose AARP Status = &quot;Dissolved.&quot; Also prevents everyone except System and Del Admins from editing Volunteer Assignments for Dissolved Programs.</description>
+    <errorConditionFormula>AND(
+(ISPICKVAL(Position__r.Program__r.AARP_Status__c, &quot;Dissolved&quot;)),
+(NOT(CONTAINS($Profile.Name,&quot;System&quot;))), 
+(NOT($Permission.Delegated_Administrator))
+)</errorConditionFormula>
+    <errorMessage>The Chapter associated with the selected Position is dissolved. Please check with the Chapter Administrator for additional information.</errorMessage>
+</ValidationRule>

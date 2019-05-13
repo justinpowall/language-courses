@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Allows setting the default Program Code while creating a Reimbursement Item for a specific Program</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Program Code Defaults</label>
+    <visibility>Protected</visibility>
+</CustomObject>

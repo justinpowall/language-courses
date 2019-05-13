@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fields_Cannot_Be_Changed_Staff_Declined</fullName>
+    <active>true</active>
+    <description>Record cannot be changed when the Status is Declined.</description>
+    <errorConditionFormula>AND( 
+$Profile.Name = &quot;Tax-Aide Staff - LMS Admin&quot;, 
+ISPICKVAL(Status__c, &quot;Declined&quot;),
+
+OR( 
+ISCHANGED(Service_Being_Recognized__c),
+ISCHANGED(Award_Name__c),
+ISCHANGED(Received_By_Date__c),
+ISCHANGED(Shipping_Name__c), 
+ISCHANGED(Shipping_Street__c), 
+ISCHANGED(Shipping_City__c), 
+ISCHANGED(Shipping_State_Territory__c), 
+ISCHANGED(Shipping_Postal_Code__c) 
+))</errorConditionFormula>
+    <errorMessage>Record cannot be changed when the Status is Declined.</errorMessage>
+</ValidationRule>

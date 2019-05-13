@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>States_Open_Positions</fullName>
+    <columns>NAME</columns>
+    <columns>Department_Code__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>ST</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open,Posted</value>
+    </filters>
+    <label>States: All Posted Positions</label>
+    <language>en_US</language>
+</ListView>

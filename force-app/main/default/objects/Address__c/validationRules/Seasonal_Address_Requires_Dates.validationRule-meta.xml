@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seasonal_Address_Requires_Dates</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(AND(
+  ISPICKVAL(Type__c, &#39;Seasonal&#39;),
+  OR(
+    ISBLANK(Seasonal_Address_Start_Date__c),
+    ISBLANK(Seasonal_Address_End_Date__c)
+   )), TRUE, FALSE)</errorConditionFormula>
+    <errorMessage>A Seasonal Start Date and End Date are required when seasonal address type is chosen.</errorMessage>
+</ValidationRule>

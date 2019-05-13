@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_date_set_after_start_date</fullName>
+    <active>true</active>
+    <description>Event End must be equal to or later than Event Start</description>
+    <errorConditionFormula>Event_Start__c  &gt;=  Event_End__c</errorConditionFormula>
+    <errorMessage>Event end date must be after the event start date</errorMessage>
+</ValidationRule>

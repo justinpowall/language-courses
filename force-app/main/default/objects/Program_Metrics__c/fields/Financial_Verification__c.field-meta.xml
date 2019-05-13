@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Verification__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Per Chapter Compliance guidelines, a verification statement is included at the end of the financial section of the Program Metrics screen so that anyone doing data entry of financial information must verify that the data is accurate and can be filed by AARP in a group return.</description>
+    <externalId>false</externalId>
+    <label>Financial Verification</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

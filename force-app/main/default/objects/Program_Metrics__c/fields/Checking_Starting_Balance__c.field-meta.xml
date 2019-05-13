@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checking_Starting_Balance__c</fullName>
+    <description>Enter Chapter’s checking starting balance as of January 1.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter Chapter’s checking starting balance as of January 1.</inlineHelpText>
+    <label>Checking Starting Balance</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

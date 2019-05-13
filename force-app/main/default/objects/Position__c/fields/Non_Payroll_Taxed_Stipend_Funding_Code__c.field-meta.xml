@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Payroll_Taxed_Stipend_Funding_Code__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Non-Payroll Taxed Stipend Funding Code</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Non-Payroll Taxed Stipend Funding Code</inlineHelpText>
+    <label>Non-Payroll TS Funding Code</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Funding_Code__c.Program__r.Name</field>
+            <operation>equals</operation>
+            <value>Experience Corps</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Funding_Code__c</referenceTo>
+    <relationshipLabel>Positions</relationshipLabel>
+    <relationshipName>Positions</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

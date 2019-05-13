@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Full_Stipend_Amount__c</fullName>
+    <description>Captures the total stipend amount paid to volunteers holding this position.</description>
+    <externalId>false</externalId>
+    <formula>Rate_1_Amount__c -  Deduction_Amount__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is a read-only field that captures total stipend amount for this position.</inlineHelpText>
+    <label>Full Stipend Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

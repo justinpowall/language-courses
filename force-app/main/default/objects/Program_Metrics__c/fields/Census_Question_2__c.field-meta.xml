@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Census_Question_2__c</fullName>
+    <description>Annual census question that is entered each year.  Corresponding answer is provided in field, Answer #2.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Annual census question that is entered each year.  Corresponding answer is provided in field, Answer #2.</inlineHelpText>
+    <label>Census Question #2</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

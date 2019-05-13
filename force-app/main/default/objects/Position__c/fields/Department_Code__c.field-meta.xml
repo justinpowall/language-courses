@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department_Code__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Captures the Department Code associated with the position; this object is used for expense processing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Search for and select the department code that will be used by PeopleSoft for expense reimbursement.</inlineHelpText>
+    <label>Department Code</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) OR (1 AND 3)</booleanFilter>
+        <filterItems>
+            <field>Department_Code__c.Is_Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>$Profile.Name</field>
+            <operation>contains</operation>
+            <valueField>Department_Code__c.Program__r.Name</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Profile.Name</field>
+            <operation>contains</operation>
+            <value>System</value>
+        </filterItems>
+        <infoMessage>Search results are automatically filtered to only include department codes that are used by your program. If you would like to see all department codes that match your search, click Show All Results in the yellow bar below.</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Department_Code__c</referenceTo>
+    <relationshipLabel>Positions</relationshipLabel>
+    <relationshipName>Positions</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

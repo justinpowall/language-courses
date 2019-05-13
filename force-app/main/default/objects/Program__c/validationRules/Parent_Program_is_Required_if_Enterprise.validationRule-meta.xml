@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Program_is_Required_if_Enterprise</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(Parent_Program__c), Not( Enterprise_Level_Program__c))</errorConditionFormula>
+    <errorMessage>A Parent Program is required unless this program is an Enterprise Level Program.</errorMessage>
+</ValidationRule>

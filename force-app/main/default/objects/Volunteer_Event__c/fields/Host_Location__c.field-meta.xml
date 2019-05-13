@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Host_Location__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup field to Host Location object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The host site for the event. This field is required for Driver Safety. Note: A Location record is required for this field.</inlineHelpText>
+    <label>Location</label>
+    <referenceTo>Location__c</referenceTo>
+    <relationshipLabel>Volunteer Events</relationshipLabel>
+    <relationshipName>Program_Events</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

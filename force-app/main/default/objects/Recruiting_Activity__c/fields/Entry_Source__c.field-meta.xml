@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entry_Source__c</fullName>
+    <description>Volunteer interest form or application completed online.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Volunteer interest form or application completed online.</inlineHelpText>
+    <label>Online Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General Intake Form</fullName>
+                <default>false</default>
+                <label>Volunteer Interest Form</label>
+            </value>
+            <value>
+                <fullName>Driver Safety Application</fullName>
+                <default>false</default>
+                <label>Driver Safety Application</label>
+            </value>
+            <value>
+                <fullName>Experience Corps Intake Form</fullName>
+                <default>false</default>
+                <label>Experience Corps Intake Form</label>
+            </value>
+            <value>
+                <fullName>States Leadership Application</fullName>
+                <default>false</default>
+                <label>States Volunteer Application</label>
+            </value>
+            <value>
+                <fullName>Tax-Aide Application</fullName>
+                <default>false</default>
+                <label>Tax-Aide Application</label>
+            </value>
+            <value>
+                <fullName>Volunteer Wizard</fullName>
+                <default>false</default>
+                <label>Volunteer Wizard</label>
+            </value>
+            <value>
+                <fullName>Volunteer Opportunity Board</fullName>
+                <default>false</default>
+                <label>Volunteer Opportunity Board</label>
+            </value>
+            <value>
+                <fullName>Life Reimagined Application</fullName>
+                <default>false</default>
+                <label>Life Reimagined Application</label>
+            </value>
+            <value>
+                <fullName>Program Activity</fullName>
+                <default>false</default>
+                <label>Program Activity</label>
+            </value>
+            <value>
+                <fullName>Cvent</fullName>
+                <default>false</default>
+                <label>Cvent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Expense_Reimbursement</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>New Reimbursement</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>var contactid = &quot;{!$User.ContactId}&quot;;
+var assignmentContactId = &quot;{!Volunteer_Assignment__c.ContactId__c}&quot;;
+var profileName = &quot;{!$Profile.Name}&quot;;
+var isExpenseEligible = {!Volunteer_Assignment__c.Is_Expense_Eligible__c};
+var reimbursementURL =
+  &quot;{!URLFOR($Site.Prefix+&#39;/apex/ReimbursementAssignmentSearch?type=Expense_Reimbursement&amp;assignmentId=&#39; + Volunteer_Assignment__c.Id)}&quot;;
+var btn = document.getElementsByName(&quot;new_expense_reimbursement&quot;)[0];
+
+var eligibleProxyProfiles = [
+  &quot;System Administrator&quot;,
+  &quot;Tax-Aide Staff - LMS Admin&quot;,
+  &quot;States Volunteer Leader - LMS Admin&quot;,
+  &quot;Foundation Staff - LMS Admin&quot;,
+  &quot;General Program Staff - LMS Admin&quot;,
+  &quot;NRTA Staff - LMS Admin&quot;,
+  &quot;Experience Corps Staff - LMS Admin&quot;,
+  &quot;States Staff - LMS Admin&quot;,
+  &quot;Driver Safety Staff - LMS Admin&quot;  
+];
+
+if (isExpenseEligible) {
+  if (eligibleProxyProfiles.indexOf(profileName) !== -1 || contactid === assignmentContactId) {
+    window.top.location.href = reimbursementURL;
+    btn.removeAttribute(&quot;onclick&quot;);
+  } else {
+    alert(&quot;You do not have permission to create a Reimbursement for this Person.&quot;);
+  }
+} else {
+  alert(&quot;This Assignment is not expense eligible.&quot;);
+}</url>
+</WebLink>

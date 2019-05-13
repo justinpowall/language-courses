@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Event_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Program Event Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Book Drive</fullName>
+                <default>false</default>
+                <label>Book Drive</label>
+            </value>
+            <value>
+                <fullName>Info Session</fullName>
+                <default>false</default>
+                <label>Info Session</label>
+            </value>
+            <value>
+                <fullName>Lobby Day</fullName>
+                <default>false</default>
+                <label>Lobby Day</label>
+            </value>
+            <value>
+                <fullName>Marketing Event</fullName>
+                <default>false</default>
+                <label>Marketing Event</label>
+            </value>
+            <value>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+                <label>Meeting</label>
+            </value>
+            <value>
+                <fullName>Meeting - State</fullName>
+                <default>false</default>
+                <label>Meeting - State</label>
+            </value>
+            <value>
+                <fullName>Meeting - District</fullName>
+                <default>false</default>
+                <label>Meeting - District</label>
+            </value>
+            <value>
+                <fullName>Meeting - Zone</fullName>
+                <default>false</default>
+                <label>Meeting - Zone</label>
+            </value>
+            <value>
+                <fullName>Parent Engagement Event</fullName>
+                <default>false</default>
+                <label>Parent Engagement Event</label>
+            </value>
+            <value>
+                <fullName>Recruitment Event</fullName>
+                <default>false</default>
+                <label>Recruitment Event</label>
+            </value>
+            <value>
+                <fullName>Volunteer Recognition Event</fullName>
+                <default>false</default>
+                <label>Volunteer Recognition Event</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

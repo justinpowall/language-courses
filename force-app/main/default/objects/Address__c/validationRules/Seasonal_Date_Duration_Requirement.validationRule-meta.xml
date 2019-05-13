@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seasonal_Date_Duration_Requirement</fullName>
+    <active>false</active>
+    <description>Seasonal Date must be 2 months or more and less than 7 months.</description>
+    <errorConditionFormula>OR(
+(Seasonal_Address_End_Date__c &lt;= 
+DATE( 
+year(Seasonal_Address_Start_Date__c) 
++ floor((month(Seasonal_Address_Start_Date__c) + 2)/12) + if(and(month(Seasonal_Address_Start_Date__c)=12,2 &gt;=12),-1,0) 
+, 
+if( mod( month(Seasonal_Address_Start_Date__c) + 2 , 12 ) = 0, 12 , mod( month(Seasonal_Address_Start_Date__c) + 2 , 12 )) 
+, 
+min( 
+day(Seasonal_Address_Start_Date__c), 
+case( 
+max( mod( month(Seasonal_Address_Start_Date__c) + 2 , 12 ) , 1), 
+9,30, 
+4,30, 
+6,30, 
+11,30, 
+2,28, 
+31 
+) 
+) 
+)),
+
+(Seasonal_Address_End_Date__c &gt;=  DATE( 
+year(Seasonal_Address_Start_Date__c) 
++ floor((month(Seasonal_Address_Start_Date__c) + 7)/12) + if(and(month(Seasonal_Address_Start_Date__c)=12,7 &gt;=12),-1,0) 
+, 
+if( mod( month(Seasonal_Address_Start_Date__c) + 7 , 12 ) = 0, 12 , mod( month(Seasonal_Address_Start_Date__c) + 7 , 12 )) 
+, 
+min( 
+day(Seasonal_Address_Start_Date__c), 
+case( 
+max( mod( month(Seasonal_Address_Start_Date__c) + 7 , 12 ) , 1), 
+9,30, 
+4,30, 
+6,30, 
+11,30, 
+2,28, 
+31 
+) 
+) 
+)))</errorConditionFormula>
+    <errorDisplayField>Seasonal_Address_End_Date__c</errorDisplayField>
+    <errorMessage>Seasonal addresses must have a start and end date span that is no less than 2 months and no more than 7 months.</errorMessage>
+</ValidationRule>

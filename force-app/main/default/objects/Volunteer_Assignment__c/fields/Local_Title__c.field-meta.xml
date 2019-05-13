@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Local_Title__c</fullName>
+    <description>Local title (specific to a region) for this position (States and Chapter programs only).  NOTE: Historical (prior to October 2015) position title information also migrated here for all programs.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a local title for this position, if applicable (States and Chapter programs only).  
+
+NOTE: Historical (prior to October 2015) position title information also captured here for all programs.</inlineHelpText>
+    <label>Local Title</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

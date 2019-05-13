@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount__c</fullName>
+    <description>Captures the cost of the reimbursement item (excluding mileage).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the amount for this line item. If you&#39;re submitting a flat rate reimbursement, the following rules apply: $15, $25, or $35 for a Driver Safety Course, $35 (or less) for a Tax-Aide Assignment, or $50 (or less) for a Tax-Aide Supervisory Assignment.</inlineHelpText>
+    <label>Amount</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

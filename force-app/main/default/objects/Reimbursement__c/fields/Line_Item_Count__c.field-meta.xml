@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Line_Item_Count__c</fullName>
+    <description>Captures the number of line items that lookup to a particular reimbursement. This is a hidden field.</description>
+    <externalId>false</externalId>
+    <label>Line Item Count</label>
+    <summaryForeignKey>Reimbursement_Item__c.Expense__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

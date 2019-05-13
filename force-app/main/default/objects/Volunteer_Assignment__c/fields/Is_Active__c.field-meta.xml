@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Active__c</fullName>
+    <description>Checkbox used to indicate that a Volunteer is active within an assignment. The primary purpose is for development.</description>
+    <externalId>false</externalId>
+    <formula>OR(
+  AND( 
+    ISPICKVAL(Status__c, &quot;Approved&quot;) ,
+    Prior_Status_Value__c = &quot;Candidate&quot;,
+    OR(
+      Actual_End_Date__c &gt; TODAY(),
+      ISBLANK(Actual_End_Date__c)
+    )
+  ),
+  AND( 
+    ISPICKVAL(Status__c, &quot;Approved&quot;) ,
+    Prior_Status_Value__c = &quot;Approved&quot;,
+    OR(
+      Actual_End_Date__c &gt; TODAY(),
+      ISBLANK(Actual_End_Date__c) 
+    )
+  ),
+  OR(
+    AND(
+      ISPICKVAL( Status__c , &quot;Approved&quot;),
+      OR(
+        AND(
+          TODAY()&lt;= Actual_End_Date__c,
+          TODAY()&gt;= Start_Date__c),
+        AND(
+          TODAY()&gt;= Start_Date__c,
+          ISBLANK(Actual_End_Date__c)
+        )
+      )
+    ),
+    AND(
+      ISPICKVAL( Status__c , &quot;Candidate&quot;),
+      OR(
+        AND(
+          ISBLANK(Contact__r.Death_Notification_Date__c),
+          ISBLANK( Actual_End_Date__c ),
+        ISBLANK(Start_Date__c )),
+        AND(
+          NOT(ISBLANK(Contact__r.Death_Notification_Date__c)),
+          ISBLANK(Start_Date__c ),
+        TODAY () &lt; Actual_End_Date__c)        
+      )
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Active</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

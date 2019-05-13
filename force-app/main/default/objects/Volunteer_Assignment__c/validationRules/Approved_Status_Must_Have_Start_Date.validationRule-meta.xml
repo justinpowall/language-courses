@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Status_Must_Have_Start_Date</fullName>
+    <active>true</active>
+    <description>Assignment record with Approved status must have an assignment start date.</description>
+    <errorConditionFormula>AND( ISPICKVAL(Status__c, &quot;Approved&quot;) ,
+ ISBLANK( Start_Date__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Start_Date__c</errorDisplayField>
+    <errorMessage>An assignment record with an Approved status cannot have a blank assignment start date.</errorMessage>
+</ValidationRule>

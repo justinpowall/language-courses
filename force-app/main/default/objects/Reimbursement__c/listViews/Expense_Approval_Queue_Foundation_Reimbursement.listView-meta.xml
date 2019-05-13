@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Approval_Queue_Foundation_Reimbursement</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Expense Approval Queue: Foundation</label>
+    <queue>Expense_Approval_Queue_Foundation</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

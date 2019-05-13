@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Pre_Approval</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>New Pre-Approval</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>var contactid = &#39;{!$User.ContactId}&#39;;
+var profileName = &#39;{!$Profile.Name}&#39;;
+
+if(profileName.indexOf(&quot;States&quot;) == -1 &amp;&amp; profileName.indexOf(&quot;General Program&quot;) == -1 &amp;&amp; profileName.indexOf(&quot;Foundation&quot;) == -1 &amp;&amp; profileName.indexOf(&quot;NRTA&quot;) == -1) {
+
+    var preApprovalWarning = confirm(&quot;You are about to create a request for a PRE-APPROVAL of future expenditures. This will not be an actual request for reimbursement. Do you wish to continue?&quot;);
+
+    if({!Volunteer_Assignment__c.Is_Expense_Eligible__c == true}) { 
+        if(profileName.indexOf(&quot;Tax-Aide&quot;) != -1) { 
+            if(profileName == &quot;Tax-Aide Staff - LMS Admin&quot; || profileName == &quot;System Administrator&quot; || contactid == &#39;{!Volunteer_Assignment__c.ContactId__c}&#39;){
+                if (preApprovalWarning == true) {
+                    window.top.location.href = &quot;{!URLFOR($Site.Prefix+&#39;/apex/ReimbursementAssignmentSearch?type=Expense_Pre_Approval&amp;assignmentId=&#39; + Volunteer_Assignment__c.Id)}&quot;;
+                    var btn = document.getElementsByName(&#39;new_pre_approval&#39;)[0];
+                    btn.removeAttribute(&#39;onclick&#39;);
+                } else {
+                }
+            } else {
+                alert(&quot;You do not have permission to create a Reimbursement for this Person.&quot;);
+            }
+        } else {
+            if (preApprovalWarning == true) {
+                window.top.location.href = &quot;{!URLFOR($Site.Prefix+&#39;/apex/ReimbursementAssignmentSearch?type=Expense_Pre_Approval&amp;assignmentId=&#39; + Volunteer_Assignment__c.Id)}&quot;;
+                var btn = document.getElementsByName(&#39;new_pre_approval&#39;)[0];
+                btn.removeAttribute(&#39;onclick&#39;);
+            } else {
+            }
+        }
+    } else {
+        alert(&quot;This Assignment is not expense eligible.&quot;); 
+    }
+}</url>
+</WebLink>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_Upper_House_District_Number__c</fullName>
+    <description>State upper house district number.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter your 3-character state upper house district number.</inlineHelpText>
+    <label>State Upper House District Number</label>
+    <length>3</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

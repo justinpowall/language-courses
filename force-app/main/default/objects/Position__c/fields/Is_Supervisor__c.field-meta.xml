@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Supervisor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This box is checked if this position is a supervisory role, e.g manages other volunteers.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if this is a supervisory position, e.g. manages other volunteers.</inlineHelpText>
+    <label>Supervisory Position</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

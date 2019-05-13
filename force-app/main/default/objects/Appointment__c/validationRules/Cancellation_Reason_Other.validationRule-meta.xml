@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Reason_Other</fullName>
+    <active>true</active>
+    <description>This validation ensures the Cancel Reason textbox is filled out when Other is selected as a Cancellation reason.</description>
+    <errorConditionFormula>AND(
+TEXT(Cancellation_Reason__c) = &quot;Other&quot;,
+ISBLANK(Cancel_Reason_Other__c)
+)</errorConditionFormula>
+    <errorDisplayField>Cancel_Reason_Other__c</errorDisplayField>
+    <errorMessage>When other is selected for Cancellation Reason, the Cancel Reason textbox is required.</errorMessage>
+</ValidationRule>

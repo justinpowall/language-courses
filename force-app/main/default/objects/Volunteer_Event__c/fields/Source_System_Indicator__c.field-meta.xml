@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_System_Indicator__c</fullName>
+    <description>Provides user indication of where the record was created</description>
+    <externalId>false</externalId>
+    <formula>IF(Event_Created_in_Cvent__c ,&quot;This event was created in Cvent. Any updates to this event must be made in Cvent.&quot;,&quot;This event was created in Volunteer Portal.&quot;)</formula>
+    <label>Source System Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

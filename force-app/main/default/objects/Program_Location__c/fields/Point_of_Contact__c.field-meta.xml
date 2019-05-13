@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Point_of_Contact__c</fullName>
+    <description>Non-AARP point of contact for a program at a particular location.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of the non-AARP point of contact for the associated location. If Tax-Aide user, enter the name of Appointment Contact the taxpayer calls to make an appointment to have their tax return prepared.</inlineHelpText>
+    <label>Point of Contact</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

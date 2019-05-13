@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Status_When_Openings_Equal_Zero</fullName>
+    <active>false</active>
+    <description>Position Status = &quot;Closed&quot; when number of Remaining_Open_Positions</description>
+    <errorConditionFormula>IF(  Number_of_Active_Assignments__c =  Position_Openings__c  ,  ISPICKVAL(Status__c , &quot;Open&quot;), NULL)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Position status cannot be open if Remaining Open Positions is zero.</errorMessage>
+</ValidationRule>

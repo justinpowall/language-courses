@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Learning_Path_Notification_Uneditable</fullName>
+    <active>true</active>
+    <description>Learning path notification cannot be changed. Please contact your system administrator for this record change.</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Learning_Path_Notification_Record__c ),
+NOT(CONTAINS($Profile.Name, &quot;System&quot;)), 
+NOT($Permission.Delegated_Administrator) 
+)</errorConditionFormula>
+    <errorDisplayField>Learning_Path_Notification_Record__c</errorDisplayField>
+    <errorMessage>Learning path notification cannot be changed. Please contact your system administrator for this record change.</errorMessage>
+</ValidationRule>

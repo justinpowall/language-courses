@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Driver_Safety_Dismissal_Reason_Required</fullName>
+    <active>true</active>
+    <description>Driver Safety Dismissal Reason required when Assignment Ended Reason = Dismissed and Program = Driver Safety.</description>
+    <errorConditionFormula>AND(  
+    Program__r.Branding_Descriptor__c = &quot;Driver Safety&quot;,
+    ISPICKVAL(Assignment_Ended_Reason__c, &quot;Dismissed&quot;),
+    ISPICKVAL(Driver_Safety_Dismissal_Reason__c, &quot;&quot; ))</errorConditionFormula>
+    <errorDisplayField>Driver_Safety_Dismissal_Reason__c</errorDisplayField>
+    <errorMessage>Driver Safety Dismissal Reason is required if Assignment Ended Reason = Dismissed and program = Driver Safety.</errorMessage>
+</ValidationRule>

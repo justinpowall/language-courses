@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_Expense_Eligible_Required_for_TA</fullName>
+    <active>true</active>
+    <description>Event_Expense_Eligible required for Tax-Aide positions.</description>
+    <errorConditionFormula>OR(
+AND(
+  CONTAINS(Program__r.Branding_Descriptor__c, &quot;Tax-Aide&quot;),
+  ISPICKVAL(Expense_Eligible__c, &quot;Yes&quot;),
+  ISPICKVAL(Event_Expense_Eligible__c, &quot;&quot;)
+),
+ AND(
+ CONTAINS(Program__r.Branding_Descriptor__c, &quot;Tax-Aide&quot;), 
+ ISPICKVAL(Expense_Eligible__c , &quot;No&quot;),
+ ISPICKVAL(Event_Expense_Eligible__c, &quot;Yes&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Event_Expense_Eligible__c</errorDisplayField>
+    <errorMessage>Tax-Aide expense eligible positions must select a value for Event Expense Eligible field.  Additionally, Event Expense Eligible cannot = Yes if Expense Eligible = No.</errorMessage>
+</ValidationRule>

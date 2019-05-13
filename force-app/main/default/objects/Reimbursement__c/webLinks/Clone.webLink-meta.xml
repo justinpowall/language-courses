@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clone</fullName>
+    <availability>online</availability>
+    <description>Deep clones a reimbursement through a custom page and controller.</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Clone</masterLabel>
+    <openType>sidebar</openType>
+    <page>ReimbursementClone</page>
+    <protected>false</protected>
+</WebLink>

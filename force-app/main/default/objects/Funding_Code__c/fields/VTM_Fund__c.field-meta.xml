@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VTM_Fund__c</fullName>
+    <description>Captures the volunteer-friendly Fund verbiage. Aligns with PeopleSoft Fund.</description>
+    <externalId>false</externalId>
+    <label>Fund</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

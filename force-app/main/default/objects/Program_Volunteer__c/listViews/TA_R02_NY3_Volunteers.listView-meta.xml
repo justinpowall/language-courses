@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TA_R02_NY3_Volunteers</fullName>
+    <columns>Volunteer__c</columns>
+    <columns>Annual_Certification_Requirements_Met__c</columns>
+    <columns>Program__c</columns>
+    <columns>Program_Route_To__c</columns>
+    <columns>Status__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>equals</operation>
+        <value>Tax-Aide</value>
+    </filters>
+    <filters>
+        <field>Program_Route_To__c</field>
+        <operation>startsWith</operation>
+        <value>TA-R02-NY3</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Under Consideration,Volunteer</value>
+    </filters>
+    <filters>
+        <field>Annual_Certification_Requirements_Met__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>TA - R02 - NY3 - Vols &amp; PVs</label>
+    <sharedTo>
+        <group>Tax_Aide_TA_R02_NY3</group>
+    </sharedTo>
+</ListView>

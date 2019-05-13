@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deduction_Rate_Must_Be_Negative</fullName>
+    <active>false</active>
+    <description>Requires deduction rate to be negative for proper processing by ADP</description>
+    <errorConditionFormula>Deduction_Amount__c &gt; 0</errorConditionFormula>
+    <errorMessage>Deduction Amount must be a negative value in order to be properly processed by ADP. Please change the Deduction Amount to a negative value or set to $0 if no Deduction Amount is being used for this stipend payment.</errorMessage>
+</ValidationRule>

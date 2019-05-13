@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resume_Requested__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This box checked if a resume is requested for this position.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if a resume is requested for this position.</inlineHelpText>
+    <label>Resume Requested</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

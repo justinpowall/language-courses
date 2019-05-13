@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donations_Received__c</fullName>
+    <description>Amount received from donations this reporting period.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the amount received from donations this reporting period.</inlineHelpText>
+    <label>Donations Received</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

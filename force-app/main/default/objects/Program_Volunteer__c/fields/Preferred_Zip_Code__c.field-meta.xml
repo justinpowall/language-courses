@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Zip_Code__c</fullName>
+    <description>Preferred zip code for volunteering outside immediate area.</description>
+    <externalId>false</externalId>
+    <label>Preferred Zip Code</label>
+    <length>5</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Being_Recog_Cannot_Be_Blank</fullName>
+    <active>true</active>
+    <description>Service Being Recognized cannot be blank</description>
+    <errorConditionFormula>AND(
+ISBLANK(Service_Being_Recognized__c),
+RecordType.Name=&quot;Fellow&quot;)</errorConditionFormula>
+    <errorMessage>Service Being Recognized cannot be blank</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>States1_Reimbursements</fullName>
+    <columns>NAME</columns>
+    <columns>Program__c</columns>
+    <columns>Status__c</columns>
+    <columns>Volunteer_Event__c</columns>
+    <columns>Reimbursement_Total__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>startsWith</operation>
+        <value>st</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <label>States Reimbursements</label>
+    <sharedTo>
+        <group>Expense_Approvers_States</group>
+        <group>Expense_Pre_Approvers_States</group>
+    </sharedTo>
+</ListView>

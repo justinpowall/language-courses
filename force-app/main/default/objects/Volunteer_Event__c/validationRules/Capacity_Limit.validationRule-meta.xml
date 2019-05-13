@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Capacity_Limit</fullName>
+    <active>true</active>
+    <description>This requires that Capacity or unlimited are required fields</description>
+    <errorConditionFormula>OR( 
+ AND(
+  Unlimited__c = FALSE, 
+  Capacity__c  &lt;= 0 
+ ),
+ AND(
+   Unlimited__c = FALSE,
+   ISBLANK(Capacity__c)
+ ),
+ AND(
+  Unlimited__c = TRUE,
+  NOT(ISBLANK(Capacity__c))
+ )
+)</errorConditionFormula>
+    <errorMessage>Required to have either capacity or unlimited field populated.
+Capacity can not equal zero.</errorMessage>
+</ValidationRule>

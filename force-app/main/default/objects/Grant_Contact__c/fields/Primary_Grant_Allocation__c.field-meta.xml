@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Grant_Allocation__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Captures the stipend allocation from the primary grant for a grant contact</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the amount of the stipend that will be paid using the primary grant (DOJ, CNCS, RSVP, SERVE DC, or GOSV)</inlineHelpText>
+    <label>Primary Grant Allocation</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

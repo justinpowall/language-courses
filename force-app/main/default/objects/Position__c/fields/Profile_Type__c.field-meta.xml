@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profile_Type__c</fullName>
+    <description>Profile type associated with this position.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the profile type that is associated with this position.</inlineHelpText>
+    <label>Profile Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+            <value>
+                <fullName>Volunteer Leader - Read Only</fullName>
+                <default>false</default>
+                <label>Volunteer Leader - Read Only</label>
+            </value>
+            <value>
+                <fullName>Volunteer Leader - Edit</fullName>
+                <default>false</default>
+                <label>Volunteer Leader - Edit</label>
+            </value>
+            <value>
+                <fullName>Volunteer Supervisor - Read Only</fullName>
+                <default>false</default>
+                <label>Volunteer Supervisor - Read Only</label>
+            </value>
+            <value>
+                <fullName>Volunteer Supervisor - Edit</fullName>
+                <default>false</default>
+                <label>Volunteer Supervisor - Edit</label>
+            </value>
+            <value>
+                <fullName>Staff</fullName>
+                <default>false</default>
+                <label>Staff</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

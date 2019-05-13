@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Openings_greater_than_Active_Assignments</fullName>
+    <active>false</active>
+    <description>Position_Openings__c cannot be less than number of Number_of_Active_Assignments__c if position status = Open.</description>
+    <errorConditionFormula>Position_Openings__c  &lt;  Number_of_Active_Assignments__c</errorConditionFormula>
+    <errorDisplayField>Position_Openings__c</errorDisplayField>
+    <errorMessage>Maximum number of assignments have been reached for this position.</errorMessage>
+</ValidationRule>

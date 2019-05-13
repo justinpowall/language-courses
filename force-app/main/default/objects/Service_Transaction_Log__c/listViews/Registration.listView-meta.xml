@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration</fullName>
+    <columns>NAME</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>Integration_Partner__c</columns>
+    <columns>Request__c</columns>
+    <columns>Return_Message__c</columns>
+    <columns>Service__c</columns>
+    <columns>Status__c</columns>
+    <columns>Traffic_Flow__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Service__c</field>
+        <operation>contains</operation>
+        <value>Registration</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Error</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>2/5/2017 12:00 AM</value>
+    </filters>
+    <label>Registration</label>
+    <sharedTo>
+        <role>VTM_Manager</role>
+    </sharedTo>
+</ListView>

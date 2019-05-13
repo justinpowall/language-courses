@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Route_To_Cannot_Be_Blank</fullName>
+    <active>true</active>
+    <description>The Zip Code Route To field must be populated for Driver Safety, Experience Corps, States, Life Reimagined, Tax-Aide manually created Program Volunteer records.</description>
+    <errorConditionFormula>OR(
+
+AND(
+ OR(Program__r.Branding_Descriptor__c = &quot;Driver Safety&quot;,
+    Program__r.Branding_Descriptor__c = &quot;Experience Corps&quot;,
+    Program__r.Branding_Descriptor__c = &quot;States&quot;,
+    Program__r.Branding_Descriptor__c = &quot;Life Reimagined&quot;),
+
+  ISPICKVAL(Status__c, &quot;Prospect&quot;),
+
+  ISBLANK(Route_To__c),
+
+  NOT(OR(CONTAINS($Profile.Name,&quot;System Integrator&quot;), CONTAINS($User.LastName, &quot;Portal Maintenance&quot;)))
+),
+
+AND(
+ Program__r.Branding_Descriptor__c = &quot;Tax-Aide&quot;,
+  OR
+  (ISPICKVAL(Status__c, &quot;Prospect&quot;),
+   ISPICKVAL(Status__c, &quot;Under Consideration&quot;)),
+
+ ISBLANK(Route_To__c),
+
+ NOT(OR(CONTAINS($Profile.Name,&quot;System Integrator&quot;), CONTAINS($User.LastName, &quot;Portal Maintenance&quot;)))))</errorConditionFormula>
+    <errorDisplayField>Route_To__c</errorDisplayField>
+    <errorMessage>A postal code value for the Zip Code Route To field needs to be entered.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Recipient__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is a lookup relationship to the User object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to associate a user to a learning path notification record.</inlineHelpText>
+    <label>User Recipient</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Only active user records are available for this search.</errorMessage>
+        <filterItems>
+            <field>User.IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Salesforce_License_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Customer Community Login</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>LPNR_Users</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

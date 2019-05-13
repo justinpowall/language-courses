@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Publish_Appointments_Online__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will indicate that this site is allowing Tax-Aide appointments to be available online.
+This will be set to False and updated when site go online to allow appointments to be scheduled.  This field has to be set to True for a site to have the scheduler link to appear on the site locator.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field will indicate that this site is allowing Tax-Aide appointments to be available online.</inlineHelpText>
+    <label>Publish Appointments Online</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

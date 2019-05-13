@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Not_Active_Courses__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>User can see &quot;Course Details&quot; button for not active courses</description>
+    <externalId>false</externalId>
+    <label>Edit Not Active Courses</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

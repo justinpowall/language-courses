@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Report_Period_Start_and_End_Dates</fullName>
+    <active>true</active>
+    <description>Report_Period_Start_Date__c must be before Report_Period_End_Date__c.</description>
+    <errorConditionFormula>Report_Period_Start_Date__c &gt;  Report_Period_End_Date__c</errorConditionFormula>
+    <errorDisplayField>Report_Period_End_Date__c</errorDisplayField>
+    <errorMessage>Report Period End Date cannot before Report Period Start Date.</errorMessage>
+</ValidationRule>

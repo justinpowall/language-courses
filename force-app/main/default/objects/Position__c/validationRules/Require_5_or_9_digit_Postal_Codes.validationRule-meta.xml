@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_5_or_9_digit_Postal_Codes</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(Postal_Code__c)), NOT(REGEX(Postal_Code__c,
+&quot;\\d{5}(-\\d{4})?&quot;)))</errorConditionFormula>
+    <errorDisplayField>Postal_Code__c</errorDisplayField>
+    <errorMessage>When a postal code is entered or required it must be in the following format #####, ######### or #####-#### .</errorMessage>
+</ValidationRule>

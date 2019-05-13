@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Aide_Metrics_Record_Lockout</fullName>
+    <active>true</active>
+    <description>Only authorized users and system administrators can edit program metric records after report period end date has elapsed.</description>
+    <errorConditionFormula>AND(
+    Lockout_Date__c  &lt; TODAY(),
+    $Profile.Name  &lt;&gt; &quot;System Administrator&quot;,
+    $Profile.Name  &lt;&gt; &quot;System Integrator&quot;,
+    NOT($Permission.Delegated_Administrator) ,
+    CONTAINS(RecordType.Name, &quot;Tax&quot;))</errorConditionFormula>
+    <errorDisplayField>Lockout_Date__c</errorDisplayField>
+    <errorMessage>This record is locked and no longer editable.  Please contact your program&#39;s system administrator or staff person to make any additional edits to this record.</errorMessage>
+</ValidationRule>

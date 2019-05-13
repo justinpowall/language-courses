@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DS_Pre_Approvers_DS_CO_Reimbursement</fullName>
+    <columns>NAME</columns>
+    <filterScope>Queue</filterScope>
+    <label>DS-Pre Approvers- DS-CO</label>
+    <language>en_US</language>
+    <queue>DS_Pre_Approvers_DS_CO</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

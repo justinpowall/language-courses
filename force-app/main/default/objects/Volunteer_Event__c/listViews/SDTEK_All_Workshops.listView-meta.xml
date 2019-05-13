@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDTEK_All_Workshops</fullName>
+    <columns>NAME</columns>
+    <columns>Event_Title__c</columns>
+    <columns>Cvent_Event_Status__c</columns>
+    <columns>Event_Start__c</columns>
+    <columns>Event_Leader__c</columns>
+    <columns>Capacity__c</columns>
+    <columns>Seats_Available__c</columns>
+    <columns>Total_Accepted__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Event_Title__c</field>
+        <operation>contains</operation>
+        <value>Smart DriverTEK</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>2/4/2018 12:00 AM</value>
+    </filters>
+    <label>SDTEK - All Workshops</label>
+    <sharedTo>
+        <group>Driver_Safety_Staff</group>
+        <group>Driver_Safety_Volunteer_Leaders</group>
+        <group>Driver_Safety_Volunteer_Portal_Users</group>
+    </sharedTo>
+</ListView>

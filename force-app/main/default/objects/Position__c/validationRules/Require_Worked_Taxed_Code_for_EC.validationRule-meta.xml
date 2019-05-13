@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Worked_Taxed_Code_for_EC</fullName>
+    <active>true</active>
+    <description>Requires a value in Worked Local Tax Code if the position is for an EC-Phil program.</description>
+    <errorConditionFormula>AND(
+ ISBLANK( TEXT( Worked_Local_Tax_Code__c ) ) ,
+ CONTAINS(Program__r.Name, &quot;EC-Phil&quot; ))</errorConditionFormula>
+    <errorMessage>In order to save this position, you must select a Worked Local Tax Code. Please select a value from the picklist and save the record again.</errorMessage>
+</ValidationRule>

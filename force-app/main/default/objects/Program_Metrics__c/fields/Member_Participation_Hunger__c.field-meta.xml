@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Member_Participation_Hunger__c</fullName>
+    <description>How many members participated in programs that support fight of hunger?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many members participated in programs that support fight of hunger?</inlineHelpText>
+    <label>Member Participation:Hunger</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

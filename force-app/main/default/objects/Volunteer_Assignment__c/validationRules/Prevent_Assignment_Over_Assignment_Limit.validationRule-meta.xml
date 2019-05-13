@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Assignment_Over_Assignment_Limit</fullName>
+    <active>false</active>
+    <description>This prevents an assignment from being created if the assignment count is greater than the assignment limit that is allowed for that position.</description>
+    <errorConditionFormula>Assignment_Count__c &gt;  Position__r.Assignment_Limit__c</errorConditionFormula>
+    <errorMessage>This volunteer has held this assignment the maximum number of times allowed by AARP Volunteer Programs. Press cancel to exit this assignment and return to the previous screen.</errorMessage>
+</ValidationRule>

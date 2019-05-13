@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Payroll_Taxed_Stipend_Funding_Code</fullName>
+    <active>false</active>
+    <description>If Non-Payroll Taxed Stipend Eligible = TRUE:
+
+Non-Payroll Taxed Stipend Amount Funding Code field CANNOT be blank</description>
+    <errorConditionFormula>AND(( Non_Payroll_Taxed_Stipend_Eligible__c  = TRUE),  ISBLANK(Non_Payroll_Taxed_Stipend_Funding_Code__c))</errorConditionFormula>
+    <errorDisplayField>Non_Payroll_Taxed_Stipend_Funding_Code__c</errorDisplayField>
+    <errorMessage>Non-Payroll Taxed Stipend Funding Code field on Position CANNOT be blank</errorMessage>
+</ValidationRule>

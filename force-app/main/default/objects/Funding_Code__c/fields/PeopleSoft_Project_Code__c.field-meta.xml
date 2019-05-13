@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PeopleSoft_Project_Code__c</fullName>
+    <description>Equivalent to PROJECT_ID used by PeopleSoft.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the PROJECT_ID value found in PeopleSoft for this funding code.</inlineHelpText>
+    <label>PeopleSoft Project Code</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

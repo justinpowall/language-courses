@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Driver_Safety_WNTT_Reimbursements</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Volunteer__c</columns>
+    <columns>Reimbursement_Total__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Position__c</columns>
+    <columns>Status__c</columns>
+    <columns>Funding_Code__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Reimbursement__c.Expense_Reimbursement</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted,Approved by Program,Further Action Required,Scheduled for Payment</value>
+    </filters>
+    <filters>
+        <field>Position__c</field>
+        <operation>contains</operation>
+        <value>wntt</value>
+    </filters>
+    <filters>
+        <field>Funding_Code__c</field>
+        <operation>contains</operation>
+        <value>we need to talk</value>
+    </filters>
+    <label>Driver Safety-WNTT-Reimbursements</label>
+    <sharedTo>
+        <group>Driver_Safety_Staff</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_Programs_Requesting_Flat_Rate</fullName>
+    <active>true</active>
+    <description>Prevents flat rate reimbursements for assignments that are for volunteer programs that do not offer flat rate.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Reimbursement_Type__c , &quot;Flat Rate&quot;),
+RecordType.Name = &quot;Expense Reimbursement&quot;,
+Assignment__r.Position__r.Program__r.Branding_Descriptor__c &lt;&gt; &quot;Tax-Aide&quot;,
+Assignment__r.Position__r.Program__r.Branding_Descriptor__c &lt;&gt; &quot;Driver Safety&quot;,
+Assignment__r.Position__r.Program__r.Branding_Descriptor__c &lt;&gt; &quot;Experience Corps&quot;
+)</errorConditionFormula>
+    <errorMessage>Your program does not offer flat rate reimbursements at this time. Please select Itemized in the Expense Type field.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Amount</fullName>
+    <active>true</active>
+    <description>Requires an amount to be included on a line item.</description>
+    <errorConditionFormula>AND(
+ ISBLANK( Amount__c ),
+ ISBLANK( Miles__c ) 
+)</errorConditionFormula>
+    <errorMessage>In order to save a line item, you must include a line item amount or add the number of miles driven.</errorMessage>
+</ValidationRule>

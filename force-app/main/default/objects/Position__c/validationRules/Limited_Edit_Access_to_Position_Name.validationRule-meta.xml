@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limited_Edit_Access_to_Position_Name</fullName>
+    <active>true</active>
+    <description>Some profiles with position edit access cannot edit position name field.</description>
+    <errorConditionFormula>AND(OR(
+$Profile.Name = &quot;Driver Safety Volunteer Leader - LMS Admin&quot;, 
+$Profile.Name = &quot;Driver Safety Volunteer Leader - Read Only - LMS Admin&quot;),  
+(ISCHANGED(  Name  )))</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Position can only be edited by specified users.  Please contact an AARP staff person from your program if you need to edit this field.</errorMessage>
+</ValidationRule>

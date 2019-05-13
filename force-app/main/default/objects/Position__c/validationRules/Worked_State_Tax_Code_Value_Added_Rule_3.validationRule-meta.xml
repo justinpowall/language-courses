@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Worked_State_Tax_Code_Value_Added_Rule_3</fullName>
+    <active>false</active>
+    <description>Designed to prevent EC Staff Members from proceeding without adding a value for Worked State Tax Code</description>
+    <errorConditionFormula>IF(
+ISNEW(),
+$Profile.Name = &quot;Experience Corps Staff - LMS Admin&quot;,
+AND(
+ISBLANK($ObjectType.Position__c.Fields.Worked_State_Tax_Code__c)))</errorConditionFormula>
+    <errorDisplayField>Worked_State_Tax_Code__c</errorDisplayField>
+    <errorMessage>Must provide value to proceed</errorMessage>
+</ValidationRule>

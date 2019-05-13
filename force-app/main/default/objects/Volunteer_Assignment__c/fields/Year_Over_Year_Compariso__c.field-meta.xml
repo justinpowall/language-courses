@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Year_Over_Year_Compariso__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( (Today() - DATE(
+IF(Today() &lt; DATE( YEAR( TODAY() ) ,01,01),
+YEAR( TODAY() ) -1,
+YEAR( TODAY() )
+),01,01)) &gt;= ( Start_Date__c  - DATE( (IF( Start_Date__c &lt; DATE( YEAR( Start_Date__c ) ,01,01),
+YEAR( Start_Date__c ) -1,
+YEAR( Start_Date__c ) )
+),01,01)) ,
+1,
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Year Over Year Comparison SD</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

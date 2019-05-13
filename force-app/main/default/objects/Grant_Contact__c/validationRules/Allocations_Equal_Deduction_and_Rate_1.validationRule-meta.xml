@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allocations_Equal_Deduction_and_Rate_1</fullName>
+    <active>false</active>
+    <description>Validates that all allocations are equal to the amount of Deduction and Rate 1 amounts.</description>
+    <errorConditionFormula>(
+(BLANKVALUE(Rate_1_Amount__c, 0)) -
+(BLANKVALUE(Deduction_Amount__c, 0))
+)
+
+&lt;&gt;
+
+(
+(BLANKVALUE(BCPS__c, 0))+
+(BLANKVALUE(CPS__c, 0)) +
+(BLANKVALUE(DCPS__c, 0)) +
+(BLANKVALUE(FLBC__c, 0))+
+(BLANKVALUE(General__c, 0)) +
+(BLANKVALUE(PA_Charter_Schools__c, 0)) +
+(BLANKVALUE(Pew__c, 0)) +
+(BLANKVALUE(PSD__c, 0)) +
+(BLANKVALUE(Primary_Grant_Allocation__c, 0))
+)</errorConditionFormula>
+    <errorMessage>The value of all allocations must match the value of the Rate 1 Amount or the Deduction Amount * -1. Please update the allocations, the Rate 1 Amount, or the Deduction amount so that the values are balanced.</errorMessage>
+</ValidationRule>

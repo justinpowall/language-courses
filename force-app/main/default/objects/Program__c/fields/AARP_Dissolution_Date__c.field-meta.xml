@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AARP_Dissolution_Date__c</fullName>
+    <description>Date this Chapter was dissolved.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date this Chapter was dissolved.</inlineHelpText>
+    <label>AARP Dissolution Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

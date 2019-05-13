@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether a program event requires funding. If so, the program event approval process kicks off.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is funding required for this program event? If so, an approval is necessary.</inlineHelpText>
+    <label>Funding Required?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

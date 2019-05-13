@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_VA_Activation_After_Death_Date</fullName>
+    <active>true</active>
+    <description>This is to prevent the activation of the Volunteer Assignment after a death date has been added to the contact record.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK( User__r.Contact.Death_Notification_Date__c )), Is_Active__c)</errorConditionFormula>
+    <errorMessage>Volunteer cannot be reactivated after a death date has been entered.</errorMessage>
+</ValidationRule>

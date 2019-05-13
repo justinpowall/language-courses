@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EC_Experience_Corps</fullName>
+    <columns>NAME</columns>
+    <columns>Program_Name__c</columns>
+    <columns>Assignment__c</columns>
+    <columns>Program__c</columns>
+    <columns>Volunteer__c</columns>
+    <columns>Reimbursement_Type__c</columns>
+    <columns>Reimbursement_Total__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program_Name__c</field>
+        <operation>equals</operation>
+        <value>Experience Corps</value>
+    </filters>
+    <label>EC Experience Corps</label>
+    <sharedTo>
+        <group>Expense_Approvers_Experience_Corps</group>
+    </sharedTo>
+</ListView>

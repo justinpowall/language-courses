@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_num_non_payroll_tax_stipends_allowed__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+
+AND(
+Position__r.Non_Payroll_Taxed_Stipend_Eligible__c = TRUE,
+ISPICKVAL(Status__c, &quot;Approved&quot;),
+NOT(ISNULL(Actual_End_Date__c))),
+IF((ROUND(((Actual_End_Date__c - Start_Date__c)/30),2))&gt;12,12,(ROUND(((Actual_End_Date__c - Start_Date__c)/31),2))),
+
+IF(
+AND(
+Position__r.Non_Payroll_Taxed_Stipend_Eligible__c = TRUE,
+ISPICKVAL(Status__c, &quot;Approved&quot;),
+ISNULL(Actual_End_Date__c)), 12,
+NULL))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Maximum number of non-payroll taxed stipends allowed for this assignment.</inlineHelpText>
+    <label>Max # Non-Payroll Taxed Stipends Allowed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

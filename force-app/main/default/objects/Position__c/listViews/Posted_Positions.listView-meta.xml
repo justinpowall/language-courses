@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Posted_Positions</fullName>
+    <columns>NAME</columns>
+    <columns>Program__c</columns>
+    <columns>Parent_Position__c</columns>
+    <columns>Status__c</columns>
+    <columns>Position_Contact_Name__c</columns>
+    <columns>Related_Interests__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open,Posted</value>
+    </filters>
+    <label>All Posted Positions</label>
+    <language>en_US</language>
+</ListView>

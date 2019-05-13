@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fields_Cannot_Be_Changed_TA_VL</fullName>
+    <active>true</active>
+    <description>Award Type cannot be changed by Tax-Aide Volunteer Leader users</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(Award_Name__c),
+
+OR( 
+$Profile.Name = &quot;Tax-Aide Volunteer Leader - LMS Admin&quot;,
+$Profile.Name = &quot;Tax-Aide Staff Volunteer Leader - Read Only - LMS Admin&quot;
+))</errorConditionFormula>
+    <errorMessage>Award Type cannot be changed by Tax-Aide Volunteer Leader users</errorMessage>
+</ValidationRule>

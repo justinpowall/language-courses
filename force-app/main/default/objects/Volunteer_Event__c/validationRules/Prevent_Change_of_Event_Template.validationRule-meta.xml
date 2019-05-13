@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Change_of_Event_Template</fullName>
+    <active>true</active>
+    <description>The Event Template selected cannot be changed after saving a Volunteer Event record.</description>
+    <errorConditionFormula>ISCHANGED(Event_Template__c)</errorConditionFormula>
+    <errorMessage>The Event Template cannot be modified after a Volunteer Event record has been saved. If the Event Template was selected in error, please set the Event Cancellation Needed field to “Yes” and create a new Volunteer Event with the correct Event Template.</errorMessage>
+</ValidationRule>

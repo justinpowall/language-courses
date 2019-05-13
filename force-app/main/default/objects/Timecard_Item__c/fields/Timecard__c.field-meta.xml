@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timecard__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>The parent timecard for this particular item.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The parent timecard for this particular item.</inlineHelpText>
+    <label>Time Entry</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>$User.ContactId</field>
+            <operation>equals</operation>
+            <valueField>Timecard__c.Contact__r.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Timecard__c</referenceTo>
+    <relationshipName>Timecard_Items</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>A lookup to the program-specific volunteer contact associated with a location.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Search for and select the AARP Volunteer that serves as the associated location&#39;s point of contact for your program</inlineHelpText>
+    <label>Volunteer Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Associated Locations</relationshipLabel>
+    <relationshipName>Program_Locations</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

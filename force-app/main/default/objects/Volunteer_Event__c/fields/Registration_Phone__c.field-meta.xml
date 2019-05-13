@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Phone__c</fullName>
+    <description>AARP.org / CTG.org Phone number</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Driver Safety users may enter the Driver Safety Registration Line 877-805-0458. States users may enter the Toll-Free Registration Line 877-926-8300. 
+If you’re not using a registration call center, please enter a Registration Phone.</inlineHelpText>
+    <label>Registration Phone</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

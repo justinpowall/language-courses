@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volunteer_Hours_Other_Education__c</fullName>
+    <description>How many volunteer hours did this chapter contribute this year to other education programs?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many volunteer hours did this chapter contribute this year to other education programs?</inlineHelpText>
+    <label>Volunteer Hours:Other Education</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

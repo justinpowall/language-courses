@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Receive_Date_After_Submit_Date</fullName>
+    <active>true</active>
+    <description>Validates that Received By Date is at least 14 days after Submission Date.</description>
+    <errorConditionFormula>NOT(Received_By_Date__c &gt;= DATEVALUE(CreatedDate)+14)</errorConditionFormula>
+    <errorMessage>Received By Date must be more than 14 days from date of submission.</errorMessage>
+</ValidationRule>

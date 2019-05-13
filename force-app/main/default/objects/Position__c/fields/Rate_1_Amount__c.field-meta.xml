@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rate_1_Amount__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Captures the amount of taxable grant money that is allocated to a position&#39;s stipend.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the amount of taxable grant money allocated to this position for stipends. This includes the GOSV, CNCS, and Serve DC grants as well as any grants used to match these grants.</inlineHelpText>
+    <label>Rate 1 Amount</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

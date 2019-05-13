@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>Current volunteer status of the contact associated with this record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Volunteer&#39;s overall program standing. To end an assignment, you must first enter an end date or update the status on the assignment record. The Program Volunteer status will then automatically update to Assignment Ended.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>true</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Assignment Ended</fullName>
+                <default>false</default>
+                <label>Assignment Ended</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

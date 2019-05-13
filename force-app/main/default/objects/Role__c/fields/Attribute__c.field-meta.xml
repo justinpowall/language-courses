@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attribute__c</fullName>
+    <description>Driver Safety attribute to RRD CustomPoint as part of the SSO login.</description>
+    <externalId>false</externalId>
+    <label>Attribute</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Staff</fullName>
+                <default>false</default>
+                <label>Staff</label>
+            </value>
+            <value>
+                <fullName>ADS Itemized Approver - Lvl 1</fullName>
+                <default>false</default>
+                <label>ADS Itemized Approver - Lvl 1</label>
+            </value>
+            <value>
+                <fullName>State Coordinator</fullName>
+                <default>false</default>
+                <label>State Coordinator</label>
+            </value>
+            <value>
+                <fullName>Deputy State Coordinator</fullName>
+                <default>false</default>
+                <label>Deputy State Coordinator</label>
+            </value>
+            <value>
+                <fullName>Zone Coordinator</fullName>
+                <default>false</default>
+                <label>Zone Coordinator</label>
+            </value>
+            <value>
+                <fullName>District Coordinator</fullName>
+                <default>false</default>
+                <label>District Coordinator</label>
+            </value>
+            <value>
+                <fullName>Interim State Coordinator</fullName>
+                <default>false</default>
+                <label>Interim State Coordinator</label>
+            </value>
+            <value>
+                <fullName>National Coordinator</fullName>
+                <default>false</default>
+                <label>National Coordinator</label>
+            </value>
+            <value>
+                <fullName>National Advisor</fullName>
+                <default>false</default>
+                <label>National Advisor</label>
+            </value>
+            <value>
+                <fullName>Chief Trainer</fullName>
+                <default>false</default>
+                <label>Chief Trainer</label>
+            </value>
+            <value>
+                <fullName>Tech Advisor</fullName>
+                <default>false</default>
+                <label>Tech Advisor</label>
+            </value>
+            <value>
+                <fullName>Trainer</fullName>
+                <default>false</default>
+                <label>Trainer</label>
+            </value>
+            <value>
+                <fullName>Analyst Advisor</fullName>
+                <default>false</default>
+                <label>Analyst Advisor</label>
+            </value>
+            <value>
+                <fullName>Marketing Specialist</fullName>
+                <default>false</default>
+                <label>Marketing Specialist</label>
+            </value>
+            <value>
+                <fullName>Master Instructor</fullName>
+                <default>false</default>
+                <label>Master Instructor</label>
+            </value>
+            <value>
+                <fullName>Instructor</fullName>
+                <default>false</default>
+                <label>Instructor</label>
+            </value>
+            <value>
+                <fullName>Instructor - Universal Registration</fullName>
+                <default>false</default>
+                <label>Instructor - Universal Registration</label>
+            </value>
+            <value>
+                <fullName>Instructor-Spanish</fullName>
+                <default>false</default>
+                <label>Instructor-Spanish</label>
+            </value>
+            <value>
+                <fullName>Instructor-Chinese</fullName>
+                <default>false</default>
+                <label>Instructor-Chinese</label>
+            </value>
+            <value>
+                <fullName>Telephone Coordinator</fullName>
+                <default>false</default>
+                <label>Telephone Coordinator</label>
+            </value>
+            <value>
+                <fullName>Telephone Coordinator – Spanish</fullName>
+                <default>false</default>
+                <label>Telephone Coordinator – Spanish</label>
+            </value>
+            <value>
+                <fullName>Course Administrator</fullName>
+                <default>false</default>
+                <label>Course Administrator</label>
+            </value>
+            <value>
+                <fullName>CarFit Coordinator</fullName>
+                <default>false</default>
+                <label>CarFit Coordinator</label>
+            </value>
+            <value>
+                <fullName>CarFit Event Coordinator</fullName>
+                <default>false</default>
+                <label>CarFit Event Coordinator</label>
+            </value>
+            <value>
+                <fullName>CarFit Instructor</fullName>
+                <default>false</default>
+                <label>CarFit Instructor</label>
+            </value>
+            <value>
+                <fullName>CarFit Technician</fullName>
+                <default>false</default>
+                <label>CarFit Technician</label>
+            </value>
+            <value>
+                <fullName>WNTT Coordinator</fullName>
+                <default>false</default>
+                <label>WNTT Coordinator</label>
+            </value>
+            <value>
+                <fullName>WNTT Facilitator</fullName>
+                <default>false</default>
+                <label>WNTT Facilitator</label>
+            </value>
+            <value>
+                <fullName>Regional Coordinator</fullName>
+                <default>false</default>
+                <label>Regional Coordinator</label>
+            </value>
+            <value>
+                <fullName>Administration Specialist</fullName>
+                <default>false</default>
+                <label>Administration Specialist</label>
+            </value>
+            <value>
+                <fullName>Technology Specialist</fullName>
+                <default>false</default>
+                <label>Technology Specialist</label>
+            </value>
+            <value>
+                <fullName>Training Specialist</fullName>
+                <default>false</default>
+                <label>Training Specialist</label>
+            </value>
+            <value>
+                <fullName>Partnership Communication Specialist</fullName>
+                <default>false</default>
+                <label>Partnership Communication Specialist</label>
+            </value>
+            <value>
+                <fullName>Prospective Volunteer Specialist</fullName>
+                <default>false</default>
+                <label>Prospective Volunteer Specialist</label>
+            </value>
+            <value>
+                <fullName>Senior District Coordinator</fullName>
+                <default>false</default>
+                <label>Senior District Coordinator</label>
+            </value>
+            <value>
+                <fullName>Local Coordinator</fullName>
+                <default>false</default>
+                <label>Local Coordinator</label>
+            </value>
+            <value>
+                <fullName>Administrative Coordinator</fullName>
+                <default>false</default>
+                <label>Administrative Coordinator</label>
+            </value>
+            <value>
+                <fullName>Technology Coordinator</fullName>
+                <default>false</default>
+                <label>Technology Coordinator</label>
+            </value>
+            <value>
+                <fullName>Training Coordinator</fullName>
+                <default>false</default>
+                <label>Training Coordinator</label>
+            </value>
+            <value>
+                <fullName>Communication Coordinator</fullName>
+                <default>false</default>
+                <label>Communication Coordinator</label>
+            </value>
+            <value>
+                <fullName>Shift Coordinator</fullName>
+                <default>false</default>
+                <label>Shift Coordinator</label>
+            </value>
+            <value>
+                <fullName>Electronic Return Originator</fullName>
+                <default>false</default>
+                <label>Electronic Return Originator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

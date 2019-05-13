@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_Years_Served__c</fullName>
+    <description>Sum of the time spent in Active status (Both Candidate and Approved Volunteer Assignments) excluding any overlapping time if multiple Volunteer Assignments.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total time spent as an active volunteer with this program based on Volunteer Assignment start and end dates. Gaps in service between active assignments are not counted.</inlineHelpText>
+    <label>Net Years Served</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

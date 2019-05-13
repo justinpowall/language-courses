@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Migrated_Addresses</fullName>
+    <columns>Contact__c</columns>
+    <columns>NAME</columns>
+    <columns>Address_Line_2__c</columns>
+    <columns>Address_Line_3__c</columns>
+    <columns>City__c</columns>
+    <columns>Postal_Code__c</columns>
+    <columns>State_Territory__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Standardization_State__c</field>
+        <operation>equals</operation>
+        <value>Failed</value>
+    </filters>
+    <label>Migrated Addresses</label>
+    <sharedTo>
+        <role>VTM_Manager</role>
+    </sharedTo>
+</ListView>

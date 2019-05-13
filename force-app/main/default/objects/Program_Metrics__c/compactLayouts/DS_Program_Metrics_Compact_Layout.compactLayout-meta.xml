@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DS_Program_Metrics_Compact_Layout</fullName>
+    <fields>RecordTypeId</fields>
+    <fields>Program__c</fields>
+    <fields>Report_Period_Start_Date__c</fields>
+    <fields>Report_Period_End_Date__c</fields>
+    <label>DS Program Metrics Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VE_and_ET_Must_be_for_Same_Program</fullName>
+    <active>true</active>
+    <description>Volunteer Event and Event Template must be for the same Program</description>
+    <errorConditionFormula>AND(
+(Event_Created_in_Cvent__c = FALSE),
+(Program__r.Branding_Descriptor__c &lt;&gt; Event_Template__r.Program__r.Branding_Descriptor__c),
+( Program__c &lt;&gt; &quot;DS-SDTEK&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Event_Template__c</errorDisplayField>
+    <errorMessage>Please make sure the Event Template and Volunteer Event are for the same Program.</errorMessage>
+</ValidationRule>

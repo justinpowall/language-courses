@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Work_State_if_program_equals_EC</fullName>
+    <active>true</active>
+    <description>Require Work State if program = EC</description>
+    <errorConditionFormula>AND (AND( CONTAINS( Branding_Descriptor__c , &quot;Experience Corps&quot;)), ISBLANK(TEXT( State__c )), Enterprise_Level_Program__c &lt;&gt; TRUE)</errorConditionFormula>
+    <errorMessage>Please set a State value if the program Branding Descriptor contains &quot;Experience Corps&quot;.</errorMessage>
+</ValidationRule>

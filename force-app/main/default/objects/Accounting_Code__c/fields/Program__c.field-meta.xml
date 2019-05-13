@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Captures the Enterprise Level Program that uses this accounting code.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Search for and select the Enterprise Level Program that uses this accounting code.</inlineHelpText>
+    <label>Program</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Program__c.Enterprise_Level_Program__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Program__c</referenceTo>
+    <relationshipLabel>Accounting Codes</relationshipLabel>
+    <relationshipName>Accounting_Codes</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

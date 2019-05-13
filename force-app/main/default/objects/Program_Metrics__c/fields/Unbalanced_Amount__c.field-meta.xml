@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unbalanced_Amount__c</fullName>
+    <description>Value = system total - total ending balance.  If difference = 0, then no value is populated.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Treasurer_Report_Balanced__c, &quot;Yes&quot;), NULL,
+IF( ISPICKVAL(Treasurer_Report_Balanced__c, &quot;No&quot;), ABS(System_Total__c - Total_Ending_Balance__c),NULL
+)
+)</formula>
+    <inlineHelpText>The difference amount of an unbalanced treasurer report.</inlineHelpText>
+    <label>Unbalanced Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

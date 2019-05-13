@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Intervals for years of service and courses taught for Milestone Awards</description>
+    <label>Milestone Award Interval</label>
+    <pluralLabel>Milestone Award Intervals</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Reimbursements</fullName>
+    <columns>NAME</columns>
+    <columns>Volunteer__c</columns>
+    <columns>Program__c</columns>
+    <columns>Position__c</columns>
+    <columns>Reimbursement_Type__c</columns>
+    <columns>Reimbursement_Total__c</columns>
+    <columns>Volunteer_Event__c</columns>
+    <columns>Status__c</columns>
+    <columns>Submitted_Date__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Reimbursements</label>
+    <language>en_US</language>
+    <sharedTo>
+        <allInternalUsers/>
+        <group>Chapters_Volunteer_Portal_Users</group>
+        <group>Experience_Corps_Volunteer_Portal_Users</group>
+        <group>Life_Reimagined_Volunteer_Portal_Users</group>
+        <group>States_Volunteer_Portal_Users</group>
+        <group>Tax_Aide_Volunteer_Portal_Users</group>
+    </sharedTo>
+</ListView>

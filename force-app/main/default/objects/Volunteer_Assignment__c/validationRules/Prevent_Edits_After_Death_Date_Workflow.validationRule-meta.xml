@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Edits_After_Death_Date_Workflow</fullName>
+    <active>true</active>
+    <description>Prevent any non-system administrators or delegated admins from making edits to records AFTER death date workflow.</description>
+    <errorConditionFormula>AND(
+  NOT(LastModifiedDate &lt;&gt; LastModifiedDate) ,
+  NOT(ISBLANK(Contact__r.Death_Notification_Date__c)),
+  AND(
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+    $Profile.Name &lt;&gt; &quot;System Integrator&quot;
+  ),
+  IF(ISCHANGED(Actual_End_Date__c),
+    Actual_End_Date__c &lt;&gt; (Contact__r.Death_Notification_Date__c - 1),
+    Actual_End_Date__c == (Contact__r.Death_Notification_Date__c - 1)
+  )
+)</errorConditionFormula>
+    <errorMessage>This record is for a deceased volunteer, and can only be edited by a system administrator.</errorMessage>
+</ValidationRule>

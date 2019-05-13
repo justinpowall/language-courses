@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Approval_Queue_ST_WY_Reimbursement</fullName>
+    <columns>NAME</columns>
+    <columns>Volunteer_ID__c</columns>
+    <columns>Volunteer__c</columns>
+    <columns>Volunteer_Email__c</columns>
+    <columns>Position__c</columns>
+    <columns>Reimbursement_Total__c</columns>
+    <columns>Status__c</columns>
+    <columns>Submitted_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>startsWith</operation>
+        <value>ST-WY</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <label>Expense Approval Queue: ST-WY</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>Expense_Approvers_ST_WY</group>
+    </sharedTo>
+</ListView>

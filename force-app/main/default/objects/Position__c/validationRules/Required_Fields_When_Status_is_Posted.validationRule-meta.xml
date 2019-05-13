@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Fields_When_Status_is_Posted</fullName>
+    <active>true</active>
+    <description>Certain fields become required when position status = Posted.</description>
+    <errorConditionFormula>AND( 
+    ISPICKVAL( Status__c , &quot;Open&quot;), 
+             OR(
+                AND(ISBLANK( Postal_Code__c), ISBLANK(TEXT(Regional_Opening__c))), 
+                ISBLANK(Related_Interests__c), 
+                ISBLANK( Location__c), 
+                ISBLANK( Display_Name__c), 
+                ISBLANK( Purpose__c), 
+                ISBLANK( Key_Responsibilities__c), 
+                ISBLANK(TEXT(Volunteer_Intake_Form__c))))</errorConditionFormula>
+    <errorMessage>When Job Board Status is &quot;Posted,&quot; the following position fields cannot be blank:
+• Postal Code when Nationwide or Statewide are selected
+• Location
+• Display Name
+• Purpose
+• Key Responsibilities
+• Volunteer Intake Form
+• Related Interests</errorMessage>
+</ValidationRule>
